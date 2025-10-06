@@ -1,6 +1,6 @@
 ---
 title: "GitHub ActionsでiOSアプリのバージョン番号を更新するPull Requestを作成する"
-emoji: "🚀"
+emoji: "📱"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["GitHub", "Xcode", "iOS", "GitHubActions"]
 published: true

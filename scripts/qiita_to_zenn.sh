@@ -147,7 +147,6 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: $topics_str
 published: $published
 ---
-
 EOF
 
     # 本文を追加（ヘッダー以降の部分）
