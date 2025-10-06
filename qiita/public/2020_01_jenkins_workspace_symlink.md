@@ -3,7 +3,7 @@ title: シンボリックリンクでJenkinsのworkspaceパスを変更する
 tags:
   - Jenkins
 private: false
-updated_at: '2020-01-28T18:59:43+09:00'
+updated_at: '2025-10-06T21:48:16+09:00'
 id: 5fd4fb3dfcba1176937e
 organization_url_name: null
 slide: false

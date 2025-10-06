@@ -3,7 +3,7 @@ title: 【Unity】独自コンポーネントをCreate/AddComponentの既存カ�
 tags:
   - Unity
 private: false
-updated_at: '2020-02-07T14:43:08+09:00'
+updated_at: '2025-10-06T21:48:16+09:00'
 id: 9680ac7fa2349793cfa2
 organization_url_name: null
 slide: false

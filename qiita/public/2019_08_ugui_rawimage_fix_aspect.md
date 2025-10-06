@@ -3,7 +3,7 @@ title: 【uGUI】元サイズに合わせて適切にアスペクト比を修正
 tags:
   - Unity
 private: false
-updated_at: '2019-08-27T11:56:13+09:00'
+updated_at: '2025-10-06T21:48:16+09:00'
 id: 7d1ffcb2b8dce38bd2d8
 organization_url_name: null
 slide: false
