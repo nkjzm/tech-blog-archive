@@ -1,0 +1,96 @@
+# Emoji Dictionary for Qiita to Zenn Conversion
+# Format: keyword emoji
+# Keywords are matched case-insensitively in title
+
+# Development Tools & Platforms
+Unity 🎮
+C# 🎮
+Shader 🎨
+VR 🥽
+Oculus 🥽
+HoloLens 🥽
+Daydream 🥽
+Vive 🥽
+ARKit 📱
+AR 📱
+
+# Mobile Development
+iOS 📱
+iPhone 📱
+iPad 📱
+Android 🤖
+Xcode 🛠️
+
+# CI/CD & Tools
+Jenkins 🔧
+GitHub 🐙
+Git 🐙
+CI 🔧
+Actions 🔧
+
+# Web & APIs
+API 🌐
+Notion 📝
+Qiita 📝
+Zenn 📝
+Web 🌐
+Hugo 🌐
+Pages 🌐
+Podcast 🎙️
+
+# Programming & Libraries
+Zenject 💉
+Photon 🌐
+OpenCV 👁️
+YOLO 👁️
+TextMeshPro 📝
+uGUI 🖼️
+
+# Content Creation
+Live2D 🎭
+VTuber 🎭
+VRoid 🎭
+リップシンク 🎭
+アニメーション 🎬
+
+# Audio & Video
+Audio 🔊
+Sound 🔊
+録画 📹
+動画 📹
+音声 🔊
+
+# Design & UI
+UI 🎨
+デザイン 🎨
+Canvas 🖼️
+Image 🖼️
+
+# Infrastructure & System
+Docker 🐳
+Linux 🐧
+Windows 🪟
+Service ⚙️
+Server 🖥️
+
+# Documentation & Learning
+ドキュメント 📚
+学習 📚
+Doxygen 📖
+まとめ 📚
+備忘録 📝
+メモ 📝
+
+# Testing & QA
+Test 🧪
+テスト 🧪
+
+# Other
+Google 🔍
+Security 🔒
+Slack 💬
+Twitter 🐦
+IFTTT 🔗
+
+# Default (if no match)
+DEFAULT 📄
