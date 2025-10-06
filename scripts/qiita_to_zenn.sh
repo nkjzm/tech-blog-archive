@@ -138,12 +138,6 @@ convert_article() {
     done
     topics_str+="]"
 
-    # updated_atから年月を抽出 (例: 2022-02-12T14:47:02+09:00 -> 2022/02)
-    local year_month=""
-    if [[ "$updated_at" =~ ^([0-9]{4})-([0-9]{2}) ]]; then
-        year_month="${BASH_REMATCH[1]}/${BASH_REMATCH[2]}"
-    fi
-
     # Zennヘッダーを作成
     cat > "$zenn_file" <<EOF
 ---
@@ -153,8 +147,6 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: $topics_str
 published: $published
 ---
-
-この記事は ${year_month} に Qiita に投稿された記事を再投稿しています。
 
 EOF
 
