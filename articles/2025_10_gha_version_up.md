@@ -166,6 +166,6 @@ classic で作成する場合 repo にチェックを入れれば OK です。�
 
 https://apps.apple.com/jp/app/id6749178514
 
-また、X(Twitter)でも情報発信していますので、よかったらフォローお願いします。
+また、X(Twitter)でも情報発信していますので、よかったらフォローお願いします！
 
 https://x.com/nkjzm
