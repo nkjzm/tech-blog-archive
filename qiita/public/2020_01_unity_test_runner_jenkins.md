@@ -48,7 +48,7 @@ Test RunnerとJenkinsを連携させる際にバージョンの違いでいく�
 
 テストはこのように実行します。
 
-```.sh
+```sh
 -batchmode -runTests -testPlatform editmode -testResults "${WORKSPACE}\result.xml" -logFile
 ```
 
@@ -71,7 +71,7 @@ EditModeとPlayModeの両方のテスト結果を通知する方法を紹介し�
 
 ![dfasdキャプチャ.PNG](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55365/5b84c56b-57c6-0fbc-cb9e-5dfc6f76ad4a.png)
 
-```.sh
+```sh
 # EditModeテストの実行
 -batchmode -runTests -testPlatform editmode -testResults "${WORKSPACE}\result-editmode.xml" -logFile
 # PlayModeテストの実行

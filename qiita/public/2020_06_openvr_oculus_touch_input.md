@@ -32,7 +32,7 @@ https://docs.unity3d.com/ja/2018.4/Manual/OpenVRControllers.html
 
 適当なプロジェクトで下記コードを動かして対応関係を調べた
 
-```test.cs
+```cs:test.cs
 using UnityEngine;
 
 public class test : MonoBehaviour
@@ -126,7 +126,7 @@ https://github.com/nkjzm/OpenVR-Oculus-test
 
 # 使い方
 
-```.cs
+```cs
 // OpenVRが有効な状態でAボタンを押す場合
 if (Input.GetKeyDown(KeyCode.JoystickButton1))
 {

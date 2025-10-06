@@ -123,7 +123,7 @@ GitHub: [nkjzm/Udon](https://github.com/nkjzm/Udon)
 
 [リポジトリ](https://github.com/nkjzm/Udon)の[Releases](https://github.com/nkjzm/Udon/releases)から最新の`*.unitypackage`をダウンロードし、Unityプロジェクトにインポートしてください。[Google Geocoding API](https://developers.google.com/maps/documentation/geocoding)を使用しているため、別途API Keyの取得が必要です。
 
-```.cs
+```cs
 var popup = Instantiate(Prefab, Canvas.transform);
 popup.Open(onComplete: flg =>
 {
@@ -203,7 +203,7 @@ UnityでiOSの位置情報を取得する場合は`Input.location`を使いま�
 
 まず端末自体の位置情報が有効かどうかを調べるため`Input.location.isEnabledByUser`にアクセスします。ユーザーに位置情報取得の権限を許可してもらうシステムダイアログは`Input.location`のいずれかの機能にアクセスした時点で表示されるため、このタイミングが該当します。
 
-```.cs
+```cs
     // 端末自体の位置情報が有効か
     if (!Input.location.isEnabledByUser)
     {
@@ -217,7 +217,7 @@ UnityでiOSの位置情報を取得する場合は`Input.location`を使いま�
 
 次に、`Input.location.status`の値に応じた処理を行います。メソッド全体を示します。
 
-```.cs
+```cs
 IEnumerator GetLocation()
 {
     // 端末自体の位置情報が有効か
@@ -266,14 +266,14 @@ GoogleのGeocoding APIを使用しています。これは住所の文字列な�
 
 取得するためのURLはこのような形にになります。認証されたAPI Keyを発行する必要がある点に注意してください(無料枠の範囲内で利用可能)。
 
-```.cs
+```cs
 var url = $"https://maps.googleapis.com/maps/api/geocode/json?" +
 $"latlng={lat},{lng}&result_type=administrative_area_level_1&key={API_KEY}&language=ja";
 ```
 
 APIを叩くとこんなJSONが返ってきます。
 
-```.json
+```json
 {
    "plus_code" : {
       "compound_code" : "82RV+28 日本、香川県高松市",
@@ -331,7 +331,7 @@ APIを叩くとこんなJSONが返ってきます。
 
 今回の実装では、`JsonUtility`を使って下記のように県名のみを取得しています。
 
-```.cs
+```cs
 // 一部処理を抜き出して掲載
 IEnumerator GetAreaName(float lat, float lng)
 {
@@ -354,7 +354,7 @@ IEnumerator GetAreaName(float lat, float lng)
 
 ちなみにテスト用にInspectorから`TestDummyLocation`にチェックを入れると香川県庁の座標で試せるようになっています。
 
-```.cs
+```cs
 if (TestDummyLocation)
 {
     // 香川県庁の座標に置き換える

@@ -28,7 +28,7 @@ uGUIで要素の大きさを取得する方法は2つあります。
 
 # コード
 
-```.cs
+```cs
     static Vector2 GetRectSize(RectTransform self)
     {
         var parent = self.parent as RectTransform;

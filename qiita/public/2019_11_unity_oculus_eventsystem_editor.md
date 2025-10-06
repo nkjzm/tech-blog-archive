@@ -42,7 +42,7 @@ ignorePublish: false
 
 まず判定条件として、VR用のシーンであるかどうかを判断するため`OVRCameraRig`の有無を確認します。
 
-```.cs
+```cs
 // VR用シーンでなさそうならreturn
 if (GameObject.FindObjectOfType<OVRCameraRig>() == null) { return; }
 ```
@@ -53,7 +53,7 @@ if (GameObject.FindObjectOfType<OVRCameraRig>() == null) { return; }
 2. 同じGameObjectについている`OVRInputModule`を無効化
 3. 同じGameObjectに対して`StandaloneInputModule`をアタッチ
 
-```.cs
+```cs
 // OVRInputModuleを無効 かつ StandaloneInputModuleを有効に
 var eventSystem = GameObject.FindObjectOfType<EventSystem>();
 if (eventSystem.GetComponent<StandaloneInputModule>() == null)
@@ -66,7 +66,7 @@ if (eventSystem.GetComponent<StandaloneInputModule>() == null)
 
 最後に各Canvasに`GraphicRaycaster`を付けていきます。`Find~`系メソッドでは非アクティブなコンポーネントなどを習得できない場合があるため、`Resources.FindObjectsOfTypeAll()`を使って検索をします。Linqを使ってシーン上のものだけに絞り込みます。
 
-```.cs
+```cs
 // Project中の全Canvasコンポーネントの中からAssets以下でないもの(=Hierarchy上のもの)を全て習得
 var canvases = Resources.FindObjectsOfTypeAll<Canvas>()
 .Where(c => AssetDatabase.GetAssetOrScenePath(c).Contains(".unity")).ToArray();
@@ -74,7 +74,7 @@ var canvases = Resources.FindObjectsOfTypeAll<Canvas>()
 
 検索したCanvasに`GraphicRaycaster`が付いていれば有効に、なければ追加します。ポイントは`raycaster`の型比較で、`GetComponent<GraphicRaycaster>()`では`OVRRaycaster`も習得できてしまうため、継承された型でないことを確認する必要がありました。`raycaster.GetType() == typeof(GraphicRaycaster)`とすれば大丈夫です。
 
-```.cs
+```cs
 // GraphicRaycasterがあれば有効に、なければ追加
 // OVRRaycasterは競合しないので特にdisableにしていない
 foreach (var canvas in canvases)
@@ -100,7 +100,7 @@ foreach (var canvas in canvases)
 
 `[RuntimeInitializeOnLoadMethod]`だけだと実行一回につき1度しか再生されないため、`SceneManager.sceneLoaded += OnSceneLoaded`を追加しました。これにより新たなシーンが読み込まれる度に実行されるようになりました。初期シーンのみは今までと同じように直接実行する形です。
 
-```.cs
+```cs
 [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
 static void Init()
 {
@@ -117,7 +117,7 @@ static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 
 `SceneManager.sceneLoaded += OnSceneLoaded`ではシーン中で動的に追加されるCanvasに対応できないため、asyncで監視する実装を追加しました。コメントアウトで方式を切り替える使い方を想定しています。
 
-```.cs
+```cs
 [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
 static void Init()
 {
@@ -156,7 +156,7 @@ static async Task ReplaceAsync()
 
 Gist: [ReplaceEventSystems.cs](https://gist.github.com/nkjzm/628fb02260bc60597584679beafb2c5e)
 
-```ReplaceEventSystems.cs
+```cs:ReplaceEventSystems.cs
 using System.Linq;
 using System.Threading.Tasks;
 using UnityEditor;
@@ -265,7 +265,7 @@ public class ReplaceEventSystems
 
 Gist: [EditorCamera.cs](https://gist.github.com/nkjzm/c7a4c645f20593a5ce38bc91776cbeb0)
 
-```EditorCamera.cs
+```cs:EditorCamera.cs
 using UnityEngine;
 
 /// <summary>

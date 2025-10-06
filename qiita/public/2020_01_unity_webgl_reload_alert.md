@@ -40,7 +40,7 @@ UnityでWebGL出力したゲームはブラウザ上で動作しているため�
 
 使用できるメソッドは以下の通りです。staticメソッドなのでコンポーネントのアタッチ等は必要ありません。
 
-```.cs
+```cs
 // ページ離脱時の警告を有効にする
 nkjzm.WebGLHandler.EnableBeforeUnloadEvent();
 nkjzm.WebGLHandler.EnableBeforeUnloadEvent("離脱時のメッセージ");
@@ -107,7 +107,7 @@ mergeInto(LibraryManager.library, BeforeunloadPlugin);
 
 参考: [Unity(WebGL)でC#の関数からブラウザー側のJavaScript関数を呼び出すまたはその逆(JS⇒C#)に関する知見(プラグイン形式[.jslib])](https://qiita.com/gtk2k/items/1c7aa7a202d5f96ebdbf)
 
-```.js
+```js
   enableBeforeUnloadEvent: function (message) {
     window.onbeforeunload = function (e) {
       e.returnValue = message;
@@ -118,7 +118,7 @@ mergeInto(LibraryManager.library, BeforeunloadPlugin);
 
 実装としては、有効にする処理が呼ばれた時に`window.onbeforeunload`というイベントに関数を代入しています。これはブラウザのウィンドウ/タブがUnloadされる直前に呼ばれるコードになります。ブラウザ毎に`e.returnValue`に代入する場合と`return`として返す場合があるので、併記しています。
 
-```.js
+```js
   disableBeforeUnloadEvent: function () {
     window.onbeforeunload = null;
   },
@@ -128,7 +128,7 @@ mergeInto(LibraryManager.library, BeforeunloadPlugin);
 
 `WebGLTemplates`を使う場合は、`.jslib`ではなく`index.html`に対して処理を追加しています。
 
-```.html
+```html
   <script>
     var unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%", { onProgress: UnityProgress });
   </script>
@@ -136,7 +136,7 @@ mergeInto(LibraryManager.library, BeforeunloadPlugin);
 
 デフォルトで上記の記述があるので、下記のように書き換えています。
 
-```.html
+```html
   <script>
     var unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%", { onProgress: UnityProgress });
 

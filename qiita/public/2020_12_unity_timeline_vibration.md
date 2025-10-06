@@ -36,7 +36,7 @@ Marker機能を使うと、Timelineのシークエンス上にトリガー（下
 
 詳しくは上の記事で丁寧に説明されているので割愛しますが、大体こんな感じのコードを書いています。Timelineが該当のマーカーに到達すると`INotificationReceiver`を継承した`MonoBehaviour`にイベントが発行されるので、その中で具体的な処理（今回は振動）を書くイメージです。
 
-```VibrateMarker.cs
+```cs:VibrateMarker.cs
 [System.Serializable, DisplayName ("振動マーカー")]
 public class VibrateMarker : Marker, INotification
 {
@@ -66,7 +66,7 @@ public class VibrateMarker : Marker, INotification
 
 コードはこんな感じ
 
-```VibrateMarker.cs
+```cs:VibrateMarker.cs
 using System.ComponentModel;
 using DG.Tweening;
 using MyDearest.Platform;
@@ -92,7 +92,7 @@ public class VibrateMarker : Marker, INotification
 
 次に、これを受け取る側の処理です。一部抜粋することこんな感じ。
 
-```TimelineController.cs
+```cs:TimelineController.cs
 public sealed class TimelineController : MonoBehaviour, INotificationReceiver
 {
 	public void OnNotify (Playable origin, INotification notification, object context)
@@ -109,7 +109,7 @@ Markerが呼ばれると `OnNotify` というイベント関数が発火しま�
 
 振動の処理は部分はこんな感じです。複数プラットフォームの対応をするため、ラッパーを呼んでいます。
 
-```.cs
+```cs
     public void VibrateCommand (VRDefine.HandType handType, float duration, float power, float frequency)
     {
         VRPlatformManager.Platform.Vibrate (handType, duration, power, frequency);
@@ -118,7 +118,7 @@ Markerが呼ばれると `OnNotify` というイベント関数が発火しま�
 
 勘のいいひとはお気づきかもしれませんが、Oculusの振動メソッド`OVRInput.SetControllerVibration (frequency, amplitude, controller)`には継続時間の指定がありません。なので、`VRPlatformManager.Platform.Vibrate()`の内側で以下のような処理を呼んで疑似的に実現しています。（2.0秒間振動続けると自動で停止する仕様があるため、2秒ごとにコールしなおしています）
 
-```.cs
+```cs
 		IEnumerator VibrateCoroutine (VRDefine.HandType hand, float length, float amplitude, float frequency)
 		{
 			var lastSecond = length;
@@ -152,7 +152,7 @@ Markerが呼ばれると `OnNotify` というイベント関数が発火しま�
 `TimelineController`の全文は以下です。両手別々にイージング処理をしている関係で冗長になっていますが、大した処理はしていません。
 
 
-```TimelineController.cs
+```cs:TimelineController.cs
 using System.Collections.Generic;
 using DG.Tweening;
 using MyDearest.Platform;

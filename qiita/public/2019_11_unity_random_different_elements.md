@@ -18,7 +18,7 @@ Gist: [UniqueItemPicker.cs](https://gist.github.com/nkjzm/af7149634a11b2912ba192
 
 ## 使い方
 
-```test.cs
+```cs:test.cs
 using UnityEngine;
 
 public class test : MonoBehaviour
@@ -63,7 +63,7 @@ public class test : MonoBehaviour
 
 Gist: [UniqueItemPicker.cs](https://gist.github.com/nkjzm/af7149634a11b2912ba19257d8f33bed)
 
-```UniqueItemPicker.cs
+```cs:UniqueItemPicker.cs
 using System.Collections.Generic;
 
 /// <summary>

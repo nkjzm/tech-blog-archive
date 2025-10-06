@@ -31,7 +31,7 @@ ignorePublish: false
 
 今回はその仕組みを利用して、こんな感じのコンポーネントを作成してあげます。これを通知させたいシーン上でアタッチしておいてください(用途に応じて`DontDestroyOnLoad`や通常のクラス化などすると良いかと思います)。
 
-```SlackNotificatior.cs
+```cs:SlackNotificatior.cs
 // 動作確認していないコードなのでご了承ください
 using System;
 using UnityEngine;

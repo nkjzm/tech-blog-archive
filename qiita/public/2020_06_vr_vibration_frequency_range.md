@@ -23,7 +23,7 @@ ignorePublish: false
 
 現行のOculus/SteamVRのバイブレーション機能のメソッドで共通している`frequency(周波数)`の範囲について調べてみました。
 
-```.cs
+```cs
 // Oculus Integration 17.0 (OVRPlugin 1.49.0)
 SetControllerVibration (float frequency, float amplitude, Controller controllerMask)
 
@@ -72,7 +72,7 @@ Oculusでは同じ`0-1`の指定で周波数の最大値が360Hz/500Hzと異な�
 
 例えば「軽めの振動と重めの振動」のような使い分けなら大丈夫そうですが、特定のモノ（リンゴなど）に触った時の最適な周波数は同じ値になる気がします。下記のような実装で一応固定値の指定はできますが、用意されているメソッドの使い道から外れていてかなり気持ち悪いです。どうするのがいいんでしょうね？
 
-```.cs
+```cs
 // 周波数を200Hzで指定する
 var clampedFrequency = GetClamp01(200f);
 OVRInput.SetControllerVibration (clampedFrequency, amplitude, controllerMask)

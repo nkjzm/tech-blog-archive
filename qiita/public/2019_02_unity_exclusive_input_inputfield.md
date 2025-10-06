@@ -19,7 +19,7 @@ gist: [ExclusiveInput.cs](https://gist.github.com/nkjzm/2ea6ec61c80ea1c06a6bb1b3
 
 `Input`クラスの代わりに`ExclusiveInput`経由で`GetKeyDown`などを呼び出してください。
 
-```.cs
+```cs
 void Update()
 {
     if (ExclusiveInput.GetKeyDown(KeyCode.A))
@@ -64,7 +64,7 @@ public static bool IsFocusedOnInputField
 
 コード全文はこちらです。(gist: [ExclusiveInput.cs](https://gist.github.com/nkjzm/2ea6ec61c80ea1c06a6bb1b3016ce94f))
 
-```ExclusiveInput.cs
+```cs:ExclusiveInput.cs
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 

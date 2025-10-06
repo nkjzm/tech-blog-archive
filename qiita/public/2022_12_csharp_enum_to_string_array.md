@@ -31,7 +31,7 @@ type = (Type)EditorGUILayout.Popup("ラベル", (int)type, list);
 
 Enumの全要素を配列にした後に、switch式で文字列に変換する処理を書きました。
 
-```.cs
+```cs
 list = Enum.GetValues(typeof(Type)).Cast<Type>().Select(type => type switch
 {
     Type.Item1 => "アイテム1",
@@ -53,7 +53,7 @@ _Riderで警告表示をさせた例_
 
 そのままだと少し煩雑に見えるので、ジェネリックメソッドで定義しておくと少しだけすっきりします。
 
-```.cs
+```cs
 /// <summary> Enumの全要素を列挙した文字列配列を返す</summary>
 private static string[] ConvertStrings<TState>(Func<TState, string> selector) where TState : Enum
     => Enum.GetValues(typeof(TState)).Cast<TState>().Select(selector).ToArray();

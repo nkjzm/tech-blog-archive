@@ -21,13 +21,13 @@ ignorePublish: false
 
 Webサーバーからコンテンツをダウンロードするためのコマンドです。
 
-```.bash
+```bash
 $ brew install wget
 ```
 
 # Webサイトの一括ダウンロード
 
-```.bash
+```bash
 $ wget -rkp -l 3 http://example.com/
 ```
 

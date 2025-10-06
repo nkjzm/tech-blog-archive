@@ -25,7 +25,7 @@ ignorePublish: false
 
 Gist: [PopButton.cs](https://gist.github.com/nkjzm/b0a4f56d9787b1f6abe1102f496b9348)
 
-```PopButton.cs
+```cs:PopButton.cs
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine;

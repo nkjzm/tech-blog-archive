@@ -21,7 +21,7 @@ UnityではActivity名が`com.unity3d.player.UnityPlayerActivity`で固定なの
 
 ## コード
 
-```.bash
+```bash
 $ adb shell am start -n {Package Name}/com.unity3d.player.UnityPlayerActivity
 ```
 

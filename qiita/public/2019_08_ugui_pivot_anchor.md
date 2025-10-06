@@ -97,7 +97,7 @@ Anchorは`AnchorMin`と`AnchorMax`が一致していない場合はストレッ�
 
 ## スクリプト
 
-```RectTransformExtensions.cs
+```cs:RectTransformExtensions.cs
 using UnityEngine;
 
 public static class RectTransformExtensions

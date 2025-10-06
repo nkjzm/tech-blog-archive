@@ -48,7 +48,7 @@ https://qiita.com/charon/items/1d27a0dde1eeafe38910
 
 デフォルトで取得できる記事数が20件なので、それ以上取得する場合はパラメータ指定する必要があるみたいです。最大100件だったので、ページ指定で複数回呼ぶことで解決しています。
 
-```.cs
+```cs
     private async UniTask<List<Data>> GetQiita(int page)
     {
         // 100剣ずつ取得
@@ -84,7 +84,7 @@ https://qiita.com/yun_bow/items/f20bd38ded1a27e658f6
 
 若干詰まったこととして、ルート配列の場合は初めに `JArray` でパースする必要がありました。ご注意ください。
 
-```.cs
+```cs
         var json = request.downloadHandler.text;
         JArray jsonArray = JArray.Parse(json);
         foreach (var jToken in jsonArray)
@@ -103,7 +103,7 @@ https://qiita.com/yun_bow/items/f20bd38ded1a27e658f6
 
 今回書いたコードです、すごい汚いです。
 
-```.cs
+```cs
 using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;

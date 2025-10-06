@@ -25,7 +25,7 @@ ignorePublish: false
 
 拡張メソッドとして用意してあるので、適用したい`RawImage`から以下の様に呼び出せます。
 
-```.cs
+```cs
 [SerializeField] RawImage rawImage = null;
 void Start()
 {
@@ -41,7 +41,7 @@ void Start()
 
 そこで引数に`Vector2`を渡せる`void FixAspect(this RawImage image, Vector3 originalSize)`を用意しました。このような使い方を想定しています。
 
-```.cs
+```cs
 Vector2 initialSize;
 void Start()
 {
@@ -61,7 +61,7 @@ void UpdateImage(Texture tex)
 
 # 実装
 
-```FixAspectExtensions.cs
+```cs:FixAspectExtensions.cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -108,7 +108,7 @@ uGUIの仕組みをある程度理解している人向けです。
 
 まずは前半部分です。
 
-```.cs
+```cs
 var textureSize = new Vector2(image.texture.width, image.texture.height);
 
 var heightScale = originalSize.y / textureSize.y;
@@ -120,7 +120,7 @@ var rectSize = textureSize * Mathf.Min(heightScale, widthScale);
 
 次のブロックではAnchorで定義された領域を求める処理をしています。
 
-```.cs
+```cs
 var anchorDiff = image.rectTransform.anchorMax - image.rectTransform.anchorMin;
 var parentSize = (image.transform.parent as RectTransform).rect.size;
 var anchorSize = parentSize * anchorDiff;
@@ -130,7 +130,7 @@ var anchorSize = parentSize * anchorDiff;
 
 そして最後の行です。
 
-```.cs
+```cs
 image.rectTransform.sizeDelta = rectSize - anchorSize;
 ```
 

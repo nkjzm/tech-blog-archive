@@ -13,7 +13,7 @@ ignorePublish: false
 
 RiderでXML Documentを書く時、クラスやメソッド定義の上の行で`///`と入力すると下記のようなテンプレートを挿入してくれると思います。
 
-```.cs
+```cs
 /// <summary>
 /// ここにテキストを書く
 /// </summary>
@@ -25,7 +25,7 @@ public void Hoge()
 
 この機能は大変便利なのですが、僕は下記のように書きたい場合があります。
 
-```.cs
+```cs
 /// <summary> ここにテキストを書く </summary>
 public void Hoge() 
 {

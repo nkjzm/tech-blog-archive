@@ -41,7 +41,7 @@ Jenkinsのビルドが失敗した時、ログから原因を特定して修正�
 
 下流ジョブのビルド/シェルの実行にて記述していきます。
 
-```.bash
+```bash
 cd "${JENKINS_HOME}/workspace"
 
 curl http://localhost:8080/all/job/${PROJECT_NAME}/${BUILD_NUMBER}/consoleText >${PROJECT_NAME}-${BUILD_NUMBER}.log
@@ -65,7 +65,7 @@ Slack APIを使ってファイルをアップロードします。ファイル�
 
 curlコマンドを使って以下のようにアップロードできました(`CHANNEL_ID`と“ACCESS_TOKEN`は書き換えてください)
 
-```.bash
+```bash
 curl -F file=@${PROJECT_NAME}-${BUILD_NUMBER}.log -F channels=[CHANNEL_ID] -H "Authorization: Bearer xoxb-[ACCESS_TOKEN]" https://slack.com/api/files.upload
 rm ${PROJECT_NAME}-${BUILD_NUMBER}.log
 ````

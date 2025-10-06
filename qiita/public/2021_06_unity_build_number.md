@@ -21,7 +21,7 @@ https://github.com/nkjzm/UniBuildNumber
 
 ちなみにEditorの場合は下記のように取得できるのですが、もちろん実機では動作しません。
 
-```.cs
+```cs
 // バージョン
 PlayerSettings.bundleVersion;
 // ビルド番号
@@ -69,7 +69,7 @@ Unity 2019.3.4f1, Unity 2020.1a21以降で使えるPackage Managerの機能を�
 
 下記の3つのstaticなメソッドを用意してあります。iOS/Androidで型が違うので注意してください。
 
-```.cs
+```cs
 // Get build number in iOS
 string buildNumber_ios = nkjzm.UniBuildNumber.GetIOSBuildNumber();
 
@@ -82,7 +82,7 @@ string buildNumber = nkjzm.UniBuildNumber.GetCurrentBuildNumber();
 
 僕の場合は下記のように使用しています。
 
-```.cs
+```cs
 private void Start()
 {
     versionLabel.text = $"{Application.version} ({UniBuildNumber.GetCurrentBuildNumber()})";

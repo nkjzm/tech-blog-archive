@@ -271,7 +271,7 @@ Projectビュー上で右クリックをして、`[Create]>[C# Script]`をクリ
 
 `SimpleLipSyncer`をダブルクリックしてエディタを開きます。以下のスクリプトをコピーアンドペーストし、保存してください。
 
-```SimpleLipSyncer.cs
+```cs:SimpleLipSyncer.cs
 using UnityEngine;
 using Live2D.Cubism.Core;
 
@@ -416,7 +416,7 @@ Projectビュー上で右クリックをして、`[Create]>[C# Script]`をクリ
 
 `GazeController`をダブルクリックしてエディタを開きます。以下のスクリプトをコピーアンドペーストし、保存してください。
 
-```GazeController.cs
+```cs:GazeController.cs
 using Live2D.Cubism.Core;
 using UnityEngine;
 

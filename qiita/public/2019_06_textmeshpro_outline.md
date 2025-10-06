@@ -25,7 +25,7 @@ FontAsset、もしくはTextMesh ProコンポーネントのInspectorからマ�
 
 # スクリプトから変更する
 
-```.cs
+```cs
 
 void SetOutline(TMPro.TextMeshProUGUI tmp, float outlineWitdh, float dilateRate)
 {
@@ -44,7 +44,7 @@ void SetOutline(TMPro.TextMeshProUGUI tmp, float outlineWitdh, float dilateRate)
 
 拡張メソッドにしておいても便利そうだと思ったので載せておきます。
 
-```TextMeshProUGUIExtensions.cs
+```cs:TextMeshProUGUIExtensions.cs
 namespace TMPro
 {
     public static class TextMeshProUGUIExtensions

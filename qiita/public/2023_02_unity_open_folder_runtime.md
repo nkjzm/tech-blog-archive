@@ -12,7 +12,7 @@ ignorePublish: false
 
 # TL;DR
 
-```.cs
+```cs
 // MyPicturesフォルダを開く場合
 var path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
 System.Diagnostics.Process.Start(path);
@@ -35,7 +35,7 @@ https://twitter.com/shiena/status/1628730086966071297
 
 Processクラスは通常対象のプロセス名を指定することが多いのですが
 
-```.cs
+```cs
 // プロセス名を指定する方法
 System.Diagnostics.Process.Start("EXPLORER.EXE", @"C:\My Documents\My Pictures");
 ```
@@ -46,7 +46,7 @@ System.Diagnostics.Process.Start("EXPLORER.EXE", @"C:\My Documents\My Pictures")
 
 とありました。今回はWindowsとMacの両方に対応するアプリなので、プロセス名の指定を省略できる方が同じ記述で要件を満たしテストもシンプルになります。
 
-```.cs
+```cs
 // MyPicturesフォルダを開く場合
 var path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
 System.Diagnostics.Process.Start(path);

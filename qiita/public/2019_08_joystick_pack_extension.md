@@ -90,7 +90,7 @@ Floating Joystickの機能に加え、動かした方向に基準が動いてい
 
 参照を取得して`float`か`Vector2`として受け取る。
 
-```.cs
+```cs
 using UnityEngine;
 
 public class Test : MonoBehaviour
@@ -117,7 +117,7 @@ public class Test : MonoBehaviour
 
 全てのJoystickの親クラスになっている`Joystick`を継承して新たなクラスを作ります。
 
-```FixedFloatingJoystick.cs
+```cs:FixedFloatingJoystick.cs
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -177,7 +177,7 @@ public class FixedFloatingJoystick : Joystick
 
 Joystickが押されたタイミングと離されたタイミングで、以下の様に通知が飛んできます。
 
-```.cs
+```cs
 [SerializeField] NotifableJoystick joystick = null;
 void Start()
 {
@@ -198,7 +198,7 @@ void Start()
 [「UniRx」](https://github.com/neuecc/UniRx)を使ってイベントを実装してみました。同様に`JoyStick`を継承して拡張しています。
 
 
-```NotifableJoystick.cs
+```cs:NotifableJoystick.cs
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UniRx;

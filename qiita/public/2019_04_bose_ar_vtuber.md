@@ -97,7 +97,7 @@ Unityプロジェクトを立ち上げます。先程のSDKをインポートし
     - `OnGestureDetected`に`Smile.OnSmile()`を設定
 6. ビルドして完成 
 
-```Smile.cs
+```cs:Smile.cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

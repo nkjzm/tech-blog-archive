@@ -56,7 +56,7 @@ Quest実機で調整してみたところ、掴んだ時の手の原点は中指
 
 以下は`OVRGrabbable`を継承した`Gun`クラスです。
 
-```Gun.cs
+```cs:Gun.cs
 public class Gun : OVRGrabbable, IGrabbable
 {
     OVRInput.Controller currentController;
@@ -79,7 +79,7 @@ public class Gun : OVRGrabbable, IGrabbable
 
 では、掴んでいるコントローラーの値を通知する`void GrabBegin(OVRInput.Controller controller)`の呼び出しについて見てみましょう。`IGrabbable`というインターフェースで定義されているメソッドになります。
 
-```IGrabbable.cs
+```cs:IGrabbable.cs
 public interface IGrabbable
 {
     void GrabBegin(OVRInput.Controller controller);
@@ -88,7 +88,7 @@ public interface IGrabbable
 
 このメソッドを、掴む側の`OVRGrabber`を継承した`CustomOVRGrabbable`から呼び出しています。掴んだオブジェクトが`IGrabbable`を継承していれば、`GrabBegin()`を呼び出すという実装です。
 
-```CustomOVRGrabbable.cs
+```cs:CustomOVRGrabbable.cs
 using UnityEngine;
 
 public class CustomOVRGrabbable : OVRGrabber

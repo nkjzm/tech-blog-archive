@@ -27,7 +27,7 @@ ignorePublish: false
 
 さて、Unityでテストを書いていると、`MonoBehaviour`の機能を使った処理のテストや、プレハブのバリデーションを行いたい場合が出てくると思います。例えばこんなクラスがあったとして
 
-```HogeClass.cs
+```cs:HogeClass.cs
 namespace nkjzm.Tests
 {
     public class TestHogeClass : MonoBehaviour {}
@@ -36,7 +36,7 @@ namespace nkjzm.Tests
 
 素直に書くとこんな感じでしょうか。
 
-```TestHogeClass.cs
+```cs:TestHogeClass.cs
 namespace nkjzm.Tests
 {
     public class TestHogeClass
@@ -59,7 +59,7 @@ namespace nkjzm.Tests
 
 悪くはないのですが、テスト対象のプレハブをAssets以下の相対パスで指定している点が気になります。ディレクトリの構成を変えるとテストが通らなくなってしまいます。Packageとして配布する時にも少し困りそうです。
 
-```.cs
+```cs
 protected string FilePath = "Assets/Fuga/Piyo/hogehoge"
 
 [OneTimeSetUp]
@@ -68,7 +68,7 @@ public void OneTimeSetup() => targetPrefab = AssetDatabase.LoadAssetAtPath<HogeC
 
 そこで今回はここ部分をUtilsクラスとして書き出してみました。以下のような形で使用できます。
 
-```.cs
+```cs
 protected string FileName= "hogehoge"
 
 [OneTimeSetUp]
@@ -80,7 +80,7 @@ public void OneTimeSetup() => targetPrefab = Utils.LoadPrefab<HogeClass>(FileNam
 
 ## コード
 
-```Utils.cs
+```cs:Utils.cs
 using System.IO;
 using System.Linq;
 using UnityEditor;
@@ -132,7 +132,7 @@ https://docs.unity3d.com/ScriptReference/AssetDatabase.FindAssets.html
 
 折角なのでこちらのテストコードも載せておこうと思います。
 
-```TestUtils.cs
+```cs:TestUtils.cs
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;

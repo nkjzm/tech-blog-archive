@@ -15,7 +15,7 @@ ignorePublish: false
 
 設定画面など、スライダーやチェックボックス(Toggle)を扱うことがあります。多分ソースコードはこんな感じになっています。
 
-```ConfigController.cs
+```cs:ConfigController.cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -53,7 +53,7 @@ namespace hoge
 次に保存したいコンポーネントに対して、`Start()`内などで以下の様に呼び出してあげるだけです。
 
 
-```.cs
+```cs
 void Start()
 {
     // Toggleの場合
@@ -80,7 +80,7 @@ void Start()
 
 Gits: [SaveStateExtensions.cs](https://gist.github.com/nkjzm/156499eee0717a2728f958fd6224ceb4)
 
-```SaveStateExtensions.cs
+```cs:SaveStateExtensions.cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -116,7 +116,7 @@ public static class SaveStateExtensions
 
 `SaveStateToggle`を例に見てみると、やっていることは①`PlayerPrefs.GetInt()`で取得した値を`Toggle`の初期値として代入し、②`Toggle`の変更が合った場合のイベント(`toggle.onValueChanged`)内で`PlayerPrefs.SetInt()`を呼んでいます。
 
-```.cs
+```cs
 public static void SaveStateToggle(this Toggle toggle, string key)
 {
     key = $"{new System.Diagnostics.StackFrame(1).GetMethod().ReflectedType}+{key}";

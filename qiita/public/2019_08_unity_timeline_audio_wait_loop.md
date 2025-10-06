@@ -39,7 +39,7 @@ UnityのTimelineはマルチトラックに演出等を作成するための標�
 
 では`PlayableBehaviour`を継承したこのクラスから紹介していきます。
 
-```LoopBehaviour.cs
+```cs:LoopBehaviour.cs
 using System;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -86,7 +86,7 @@ public class LoopBehaviour : PlayableBehaviour
 
 まずは`PlayableAsset`の再生時に実行される`OnBehaviourPlay()`では音声の再生をしています。
 
-```.cs
+```cs
 public override void OnBehaviourPlay(Playable playable, FrameData info)
 {
     if (!audioSource.isPlaying)
@@ -98,7 +98,7 @@ public override void OnBehaviourPlay(Playable playable, FrameData info)
 
 続く`PrepareFrame()`は毎フレーム呼ばれる関数で、経過時間の計測を行なっています。また、経過時間が`audioClip`の長さを超えた時に`trigger`をTrueにしています。
 
-```.cs
+```cs
 public override void PrepareFrame(Playable playable, FrameData info)
 {
     timer += Time.deltaTime;
@@ -112,7 +112,7 @@ public override void PrepareFrame(Playable playable, FrameData info)
 
 最後の`OnBehaviourPause()`は名前からは想像しづらいのですが、ポーズした時だけでなく`PlayableAsset`の最後のフレームでも呼び出される関数です。この時に`trigger`がTrue、つまり再生が終わっていたらそのままにし、終わっていなければTimelineの時間を巻き戻しています。
 
-```.cs
+```cs
 public override void OnBehaviourPause(Playable playable, FrameData info)
 {
     if (waitTimeline.trigger == true)
@@ -126,7 +126,7 @@ public override void OnBehaviourPause(Playable playable, FrameData info)
 
 `LoopBehaviour`を実行するための参照は`PlayableAsset`を継承したクラスで行なっています。Hierarchy上の参照に関しては`CreatePlayable(PlayableGraph graph, GameObject owner)`の`owner`、つまりPlayableDirectorコンポーネントを持つGameObjectを経由して取得しています。
 
-```LoopClip.cs
+```cs:LoopClip.cs
 using System;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -159,7 +159,7 @@ public class LoopClip : PlayableAsset, ITimelineClipAsset
 
 最後は`PlayableAsset`を配置するための`TrackAsset`の実装です。これは単に継承して`TrackClipType`で紐付けをするだけでした。
 
-```LoopTrack.cs
+```cs:LoopTrack.cs
 using UnityEngine.Timeline;
 
 [TrackColor(1f, 0.2794118f, 0.7117646f)]

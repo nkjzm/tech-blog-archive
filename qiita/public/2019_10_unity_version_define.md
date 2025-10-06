@@ -33,7 +33,7 @@ English: [Unity - Manual : Platform dependent compilation](https://docs.unity3d.
 
 [EditorUserBuildSettings.activeScriptCompilationDefines](https://docs.unity3d.com/jp/460/ScriptReference/EditorUserBuildSettings-activeScriptCompilationDefines.html)を使います。
 
-```.cs
+```cs
 // 現在のプラットフォームで定義されているディレクティブを取得
 var defines = EditorUserBuildSettings.activeScriptCompilationDefines;
 // 結合して出力

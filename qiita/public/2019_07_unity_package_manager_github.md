@@ -32,7 +32,7 @@ Package Managerのことをわかったつもりで分かってなかったの�
 
 `dependencies`に`[package名]: [GitHubのURL]`を追加する。
 
-```manifest.json
+```json:manifest.json
 {
   "dependencies": {
     "com.e7.notch-solution": "git://github.com/5argon/NotchSolution.git",
@@ -54,7 +54,7 @@ GitHub経由でインストールしたPackageのバージョン指定はGUI上�
 
 `manifest.json`を開き直すとバージョンに関する記述が追加されている。
 
-```manifest.json
+```json:manifest.json
 {
   "dependencies": {
     "com.e7.notch-solution": "git://github.com/5argon/NotchSolution.git",

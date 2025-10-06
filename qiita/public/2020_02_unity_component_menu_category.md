@@ -28,7 +28,7 @@ ignorePublish: false
 クラスの先頭に`[AddComponentMenu()]`をつけるだけです。既存カテゴリ以下にしたければ`/`で区切って指定してください。第二引数は表示順ですが、コンポーネントについているAddComponentメニューの方では反映されなくて、メニューバーのComponentの方のみに適用されます。
 
 
-```.cs
+```cs
 [AddComponentMenu("UI/NonRenderImage", 14)]
 public class NoRenderImage : Graphic
 {
@@ -65,7 +65,7 @@ Hierarchyの`Create/UI`以下などに追加する方法です。Canvasの扱い
 
 こちらはコンポーネント自体の指定ではなく、生成するメソッドが登録されているメニューになります。以下のような`static`メソッドを用意し、`[MenuItem()]`アトリビュートを追加します。
 
-```.cs
+```cs
 [MenuItem("GameObject/UI/NoRender Image", false, 2003)]
 public static void CreateNoRenderImage()
 {
@@ -89,7 +89,7 @@ static public void AddRawImage(MenuCommand menuCommand)
 
 また、生成時に他のコンポーネントと同様に選択中のGameObject以下に生成するようにしてみましょう。Canvas以下でなかった場合は生成する処理も書きました。
 
-```.cs
+```cs
 [MenuItem("GameObject/UI/NoRender Image", false, 2003)]
 public static void CreateNoRenderImage()
 {
@@ -131,7 +131,7 @@ _^生成後のGameObjectが選択状態になる / Canvas下でない場合は�
 
 Gist: [NoRenderImage.cs](https://gist.github.com/nkjzm/2961705cb185ca6749e25860da8999a9)
 
-```NoRenderImage.cs
+```cs:NoRenderImage.cs
 using UnityEditor;
 
 namespace UnityEngine.UI

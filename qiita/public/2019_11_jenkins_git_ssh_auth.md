@@ -21,7 +21,7 @@ JenkinsでGitHubのプライベートリポジトリを扱う際に必要な、S
 
 ## (SSHをまだ作っていない場合)
 
-```.bash
+```bash
 # SSHキーの作成
 # 「ユーザー名」「パスワード」「パスワード(確認)」と3回入力を求められるが、
 # 全て空白(そのままエンター)でもOK
@@ -36,7 +36,7 @@ $ clip < ~/.ssh/id_rsa.pub
 
 GitHubの [Settings > SSH and GPG keys](https://github.com/settings/keys) にアクセスし、「New SSH key」から先ほどクリップボードにコピーした内容を貼り付ける。名前は適当でOK。
 
-```.bash
+```bash
 # 接続確認
 $ ssh -T git@github.com
 ```
@@ -68,7 +68,7 @@ Hi!って言われたら完了
 
 あるバージョンから「直接入力」しか選択できなくなったようです。入力する内容は「秘密鍵の内容」です。「秘密鍵のパス」ではないので注意してください。
 
-```.bash
+```bash
 # 秘密鍵をクリップボードにコピー(Macの場合)
 $ pbcopy < ~/.ssh/id_rsa
 # 秘密鍵をクリップボードにコピー(Winの場合)

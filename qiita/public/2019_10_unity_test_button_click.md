@@ -27,7 +27,7 @@ UnityがEventSystemで行っている処理をテストスクリプト上で再�
 
 `EventSystem.current.RaycastAll()`でRaycast先のオブジェクトを全て取得し、Linqで「先頭から」の有効なGameObjectを取得しています。
 
-```.cs
+```cs
 // ポインタイベントの作成
 var ev = new PointerEventData(EventSystem.current);
 ev.position = new Vector2(x, y);
@@ -49,7 +49,7 @@ ExecuteClickHierarchy(target, ev);
 
 意訳すると「シーンを通してレイを飛ばし、ヒットした全てを返します。**順序が保証されないことに注意してください**」です。先頭から取得するのは誤りかと思いuGUIの実装を見てみましたが、こちらも先頭から取得しているようです。恐らく大丈夫でしょう。
 
-```.cs
+```cs
 protected static RaycastResult FindFirstRaycast(List<RaycastResult> candidates)
 {
     for (var i = 0; i < candidates.Count; ++i)
@@ -73,7 +73,7 @@ protected static RaycastResult FindFirstRaycast(List<RaycastResult> candidates)
 `GetEventChain()`で親階層のオブジェクトを取得し、`ExecuteEvents.Execute()`が成功するまで実行していく処理になっています。
 
 
-```.cs
+```cs
 static void ExecuteClickHierarchy(GameObject root, BaseEventData eventData)
 {
     var transformList = new List<Transform>();
@@ -123,7 +123,7 @@ _右下のPositionと書かれた部分の数字がポインタ座標(クリッ�
 
 Gist: [ClickTest.cs](https://gist.github.com/nkjzm/1cadb94fe5ea4248ecb3f0b1534202cf)
 
-```ClickTest.cs
+```cs:ClickTest.cs
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;

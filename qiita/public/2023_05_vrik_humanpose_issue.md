@@ -96,7 +96,7 @@ https://qiita.com/HhotateA/items/e4d240fbf9a95683b706
 
 このコードでも、書き換え前の値は内部でキャッシュしておらず、同じフレーム内で取得しています。
 
-```.cs
+```cs
 var handler = new HumanPoseHandler(_HumanoidAnim.avatar, _HumanoidAnim.transform);
 handler.GetHumanPose(ref targetHumanPose);
 // 姿勢の変更

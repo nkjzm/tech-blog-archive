@@ -34,7 +34,7 @@ https://light11.hatenadiary.com/entry/2018/07/08/212014
 
 [こちらの記事](https://light11.hatenadiary.com/entry/2018/05/06/230414)を参考に下記のように取得しました。
 
-```.glsl
+```glsl
 half3 reflDir = reflect(-worldViewDir, i.worldNormal);
 // 用意されたマクロを使って取得
 half4 refColor = UNITY_SAMPLE_TEXCUBE(unity_SpecCube0, reflDir);

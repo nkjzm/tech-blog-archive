@@ -42,7 +42,7 @@ UnityのSafeArea対応に関する記事は、実機での反映のみに言及�
 
 ## iOS実機実行時のCanvasサイズ調整機能
 
-```SetCanvasBounds.cs
+```cs:SetCanvasBounds.cs
 using UnityEngine;
 
 namespace nkjzm.SafeAreaCanvas
@@ -157,7 +157,7 @@ if (Screen.width == 2436 && Screen.height == 1125)
 
 実装には[unity-GameViewSizeHelper](https://github.com/anchan828/unity-GameViewSizeHelper)というアセットを利用させていただいています。「ScriptからGameViewSizeを作成、また設定するヘルパークラス」とあり、まさにやりたいことでした。
 
-```GameViewSizeAdder.cs
+```cs:GameViewSizeAdder.cs
 using UnityEditor;
 using UnityEngine;
 

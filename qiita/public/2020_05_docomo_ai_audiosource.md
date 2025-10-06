@@ -40,7 +40,7 @@ AudioSource経由で音声出力する方法は[公式ユーザーガイドPDF](
 
 サンプルの[SpeakSDKManager.cs](https://github.com/docomoDeveloperSupport/speak-unity-sample/blob/master/sample_app/SpeakSampleApp/Assets/Scripts/SpeakSDKManager.cs)の場合、`InitializeSpeakSDK()`に下記の2行を追加してください。
 
-```.cs
+```cs
     private void InitializeSpeakSDK()
     {
         Speak.Instance().SetURL("wss://spf-v2.sebastien.ai/talk");

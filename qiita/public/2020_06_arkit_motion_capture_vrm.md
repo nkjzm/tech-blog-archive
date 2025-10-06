@@ -65,7 +65,7 @@ https://issuetracker.unity3d.com/issues/ios
 
 読み飛ばしてもらって問題ないです。`m_HumanBodyManager.humanBodiesChanged`から取得できる関節情報を直接Humanoid方に流し込む方法を試しました。コードはこんな感じ。
 
-```HumanoidTracker.cs
+```cs:HumanoidTracker.cs
 // VRM生成部分は省略
 public class HumanoidTracker : MonoBehaviour
 {
@@ -147,7 +147,7 @@ public class HumanoidTracker : MonoBehaviour
 
 前半はほぼサンプルコードそのままで、注目して欲しいのは後半の`SetHumanBoneTransformToHumanoidPoses`メソッドです。Unity標準Humanoidアバターのボーン構造である`HumanBodyBones`を`foreach`で回して、ジョイントの値を取得しています。
 
-```.cs
+```cs
 void SetHumanBoneTransformToHumanoidPoses(ARHumanBody body)
 {
     if (!body.joints.IsCreated)
@@ -176,7 +176,7 @@ void SetHumanBoneTransformToHumanoidPoses(ARHumanBody body)
 
 ARKit 3で取得できるジョイントは約90関節で、対するHumanoid型は訳54関節なので、対応付けをする必要があります。エディタ上で比較しながら対応させるメソッドを書きました。
 
-```HumanoidUtils.cs
+```cs:HumanoidUtils.cs
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
@@ -436,7 +436,7 @@ public static class HumanoidUtils
 9. `Human Body Tracking`の`Skelton Prefab`に上記プレハブを設定
 10. 以下のスクリプトをアタッチして完成
 
-```HumanoidTracker.cs
+```cs:HumanoidTracker.cs
 using System.IO;
 using UnityEngine;
 using VRM;
@@ -513,7 +513,7 @@ public class HumanoidTracker : MonoBehaviour
 
 やっていることはさっきよりシンプルです。サンプルに含まれているモデルをHumanoid型として扱えるようになったので、Humanoid型としてVRMに値を流し込んでいます。その際に`HumanPoseHandler`を経由する必要がある点に注意してください。
 
-```.cs
+```cs
 private void Update()
 {
     var origin = FindObjectOfType<BoneController>()?.GetComponent<Animator>();

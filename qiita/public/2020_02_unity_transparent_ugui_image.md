@@ -41,7 +41,7 @@ _^先ほどと同様にいくつ置いても描画されない_
 
 Gist: [NoRenderImage.cs](https://gist.github.com/nkjzm/2961705cb185ca6749e25860da8999a9)
 
-```NoRenderImage.cs
+```cs:NoRenderImage.cs
 using UnityEditor;
 
 namespace UnityEngine.UI
@@ -92,7 +92,7 @@ namespace UnityEngine.UI
 メインはこの部分だけです。メッシュ描画のコールバック関数である`OnPopulateMesh`をoverrideして、頂点をクリアしています。これで描画だけがされないGraphicコンポーネントが実現できました。
 参考: [ボタンの当たり判定(タッチ範囲)だけ広げる【Unity】【uGUI】 - (:3[kanのメモ帳]](https://kan-kikuchi.hatenablog.com/entry/InvisibleGraphic)
 
-```.cs
+```cs
 public class NoRenderImage : Graphic
 {
     protected override void OnPopulateMesh(VertexHelper vh) { vh.Clear(); }

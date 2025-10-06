@@ -11,7 +11,7 @@ ignorePublish: false
 ---
 ## C++の省略for文
 
-```.cpp
+```cpp
 #define rep(i,n) for(int i=(0);i<(n);i++)
 
 int main()
@@ -25,7 +25,7 @@ int main()
 
 ## 僕が考えたC#の省略for文
 
-```.cs
+```cs
 static void Rep(int n, Action<int> action) { for (var i = 0; i < n; ++i) { action(i); } }
 
 public static void Main()

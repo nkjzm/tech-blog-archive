@@ -51,7 +51,7 @@ https://github.com/nkjzm/Mirror
 
 鏡面からのカメラに反射する映像は、上図のように、鏡面と面対象なカメラの位置から見た映像で再現できます。まずは、カメラと面対象な位置を計算してみましょう。
 
-```.cs
+```cs
 // カメラから鏡面へのベクトル
 var diff = transform.position - TrackingCamera.transform.position;
 // 鏡面の垂直ベクトル
@@ -70,7 +70,7 @@ ReflectionCamera.transform.position = transform.position - reflection;
 
 次に反射用カメラの向きですが、これはUnityの便利関数`LookAt`を使って、鏡の中心座標に向けて上げるだけで完了です。
 
-```.cs
+```cs
 // 鏡面の方向に向ける
 ReflectionCamera.transform.LookAt(Specular.position);
 ```
@@ -81,7 +81,7 @@ ReflectionCamera.transform.LookAt(Specular.position);
 
 これは、描画対象の視錐台の最小距離を設定するための変数です。擬似的な描画をするために鏡の裏側に反射用カメラを置いているので、反射用カメラと鏡の間のオブジェクトによって遮蔽されないための設定です。
 
-```.cs
+```cs
 // カメラ設定の更新
 var distance = Vector3.Distance(transform.position, ReflectionCamera.transform.position);
 ReflectionCamera.nearClipPlane = distance* 0.9f;
@@ -117,7 +117,7 @@ ReflectionCamera.nearClipPlane = distance* 0.9f;
 
 実視野には鏡面としているQuadのサイズを、焦点距離には先程求めた`distance`を代入して求めた結果を反射用カメラに適用していきます。なお、単位はUnity座標系のものを使っています(分母と分子で一致していれば問題ない)
 
-```.cs
+```cs
 // 焦点距離と表示したい鏡面サイズから画角(FOV)を計算する
 ReflectionCamera.fieldOfView = 2 * Mathf.Atan(Size / (2 * distance)) * Mathf.Rad2Deg;
 ```
@@ -143,7 +143,7 @@ ReflectionCamera.fieldOfView = 2 * Mathf.Atan(Size / (2 * distance)) * Mathf.Rad
 
 解決方法としては、②の角度を本来のようにカメラに対して常に垂直に設定してあげます。
 
-```.cs
+```cs
 // 鏡面をカメラ方向に向ける
 Specular.rotation = Quaternion.LookRotation(Specular.position - TrackingCamera.transform.position);
 ```
@@ -169,7 +169,7 @@ _分かりやすくするため、鏡の奥に同じシェーダーで黒い板�
 
 角度によって現れるように見えるので、補正を掛けていきましょう。
 
-```.cs
+```cs
 // フレームのサイズを更新
 Frame.localScale = new Vector3(Size, Size, 1);
 // 鏡面のサイズを調整
@@ -192,7 +192,7 @@ Specular.localScale = new Vector3(-specularSize, specularSize, 1);
 
 ### シーン上のカメラを取得する
 
-```.cs
+```cs
 [SerializeField]
 bool EnabledTargetCamera = false;
 
@@ -216,7 +216,7 @@ Camera TrackingCamera
 
 ### エディタ上でも鏡の描画を更新する
 
-```.cs
+```cs
 void OnEnable()
 {
 #if UNITY_EDITOR
@@ -241,7 +241,7 @@ void Update()
 
 また、`UpdateMirror()`の中でSceneビューに変更を加えても即時反映されない現象があったのですが、以下のメソッドで解決できました。
 
-```.cs
+```cs
 #if UNITY_EDITOR
 // シーンビュー更新
 SceneView.RepaintAll();

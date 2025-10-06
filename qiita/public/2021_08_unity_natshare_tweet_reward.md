@@ -39,7 +39,7 @@ https://assetstore.unity.com/packages/tools/integration/natshare-mobile-sharing-
 
 `payload.Commit()`でSNS共有ができるのですが、非同期で実装されていて成否がbool値で返ってきます。キャンセルの時は`false`が返ってくるので、`true`の時だけ報酬付与処理を実行すればOKです。下記が実装例です。
 
-```.cs
+```cs
 // 実装例
 shareButton.onClick.AddListener(async () =>
 {

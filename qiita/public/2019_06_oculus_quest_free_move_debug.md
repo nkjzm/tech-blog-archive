@@ -46,7 +46,7 @@ CC0です。(もちろん教えてくれると嬉しい)
 
 Gistにもアップしてあります: [DebugMover.cs](https://gist.github.com/nkjzm/179f477a1de4949a2d08486caebdb55c)
 
-```DebugMover.cs
+```cs:DebugMover.cs
 using UnityEngine;
 
 public class DebugMover : MonoBehaviour
