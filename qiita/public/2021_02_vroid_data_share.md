@@ -1,13 +1,12 @@
 ---
 title: VRoid Studioの編集データ(.vroid)をPC間で共有する【Mac/Win】
+private: false
 tags:
   - VRoid
-private: false
 updated_at: '2021-02-17T20:15:16+09:00'
 id: 22d0b4b1526c8f1d3540
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

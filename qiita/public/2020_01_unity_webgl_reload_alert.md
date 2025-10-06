@@ -1,13 +1,12 @@
 ---
 title: UnityのWebGLビルドでページ再読み込みやアラートの設定を行うためのプラグイン【WebGLReloaderForUnity】
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:15+09:00'
 id: da1b6c1ad11fede742d6
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 ![Jan-05-2020 22-48-10.gif](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55365/f60682c3-78b3-7231-67bd-178601131895.gif)

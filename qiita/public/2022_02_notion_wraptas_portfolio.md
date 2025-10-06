@@ -1,13 +1,12 @@
 ---
 title: Notion+Wraptasで気軽に編集可能なポートフォリオを実現する
+private: false
 tags:
   - Notion
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: ebb078ec452a15a37bf8
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに

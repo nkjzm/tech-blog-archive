@@ -1,13 +1,12 @@
 ---
 title: 【Unity】Riderで1行<summary>を挿入するためのキーマクロとショートカットを割り当てる
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: 22aa58d7aa6838b98772
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

@@ -1,14 +1,13 @@
 ---
 title: 【Jenkins】ビルド失敗時のログをSlackに自動投稿する
+private: false
 tags:
   - Jenkins
   - Slack
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: 0de43b0f8e75579c30fb
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

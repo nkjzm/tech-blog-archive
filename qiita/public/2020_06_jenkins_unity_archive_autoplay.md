@@ -1,14 +1,13 @@
 ---
 title: 【Jenkins】ビルドしたUnityアプリをアーカイブして自動プレイを実行をする【bat】
+private: false
 tags:
   - Jenkins
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: fea78f6694d81fb214e0
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # 初めに
 

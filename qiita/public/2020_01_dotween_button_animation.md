@@ -1,13 +1,12 @@
 ---
 title: 【DOTween】ポップにアニメーションするボタンを作る【Unity】
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: 8c8b38e45c3e7712cd74
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

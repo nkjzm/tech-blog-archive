@@ -1,13 +1,12 @@
 ---
 title: 【Unity】ドコモAIエージェントAPI SpeakSDKをAudioSource経由で音声出力する
+private: false
 tags:
   - Untiy
-private: false
 updated_at: '2025-10-06T21:48:15+09:00'
 id: 117bea07c56af1e5e7a0
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

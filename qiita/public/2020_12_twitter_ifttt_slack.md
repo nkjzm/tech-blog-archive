@@ -1,13 +1,12 @@
 ---
 title: Twitterのエゴサ結果をIFTTTでSlackに見やすく投稿する
+private: false
 tags:
   - Slack
-private: false
 updated_at: '2020-12-05T04:15:23+09:00'
 id: 59b432a29f1344b356ae
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに

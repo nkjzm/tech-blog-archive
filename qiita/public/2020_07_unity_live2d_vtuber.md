@@ -1,15 +1,14 @@
 ---
 title: 【初心者向け】UnityとLive2Dで拡張しやすいVTuber配信システムを作る方法
+private: false
 tags:
   - C#
   - Unity
   - Live2D
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: 1ba5dfc0575ed6ddd8ff
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

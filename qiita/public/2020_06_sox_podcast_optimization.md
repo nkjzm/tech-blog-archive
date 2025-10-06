@@ -1,13 +1,12 @@
 ---
 title: SoXを使ったPodcastファイルの最適化
+private: false
 tags:
   - sox
-private: false
 updated_at: '2020-06-03T23:46:16+09:00'
 id: 9bd4b7a064d3056f867a
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 
