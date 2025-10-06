@@ -1,16 +1,15 @@
 ---
 title: GitHub ActionsでiOSアプリのバージョン番号を更新するPull Requestを作成する
+private: false
 tags:
   - GitHub
   - Xcode
   - iOS
   - GitHubActions
-private: false
 updated_at: '2025-10-06T14:15:04+09:00'
 id: 64dc3156febb87f08ecf
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに
@@ -173,6 +172,6 @@ classic で作成する場合 repo にチェックを入れれば OK です。�
 
 https://apps.apple.com/jp/app/id6749178514
 
-また、X(Twitter)でも情報発信していますので、よかったらフォローお願いします。
+また、X(Twitter)でも情報発信していますので、よかったらフォローお願いします！
 
 https://x.com/nkjzm
