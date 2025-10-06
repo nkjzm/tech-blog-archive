@@ -37,8 +37,7 @@ https://qiita.com/tichise/items/cc160125a706585d3ced
 
 `YOUR_PROJECT_NAME`の部分だけ自分のプロジェクト名に変更してください。project.pbxproj を取得するための必要です。(e.g. `YOUR_PROJECT_NAME.xcodeproj/project.pbxproj`)
 
-```yaml
-# versionup.yml
+```yaml:versionup.yml
 name: Manual Version up
 
 on:
