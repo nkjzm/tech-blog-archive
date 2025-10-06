@@ -1,29 +1,64 @@
-# zenn-archive
+# tech-blog-archive
+
 ![](https://github.com/C-Naoki/zenn-archive/actions/workflows/publish.yml/badge.svg)
 
-This repository is used to manage and publish articles on [Zenn](https://zenn.dev/) and [Qiita](https://qiita.com/). Primarily, it's a place to share the code I've created and record what I've learned. This serves as a personal archive from which others can also learn. You can find my pages on Zenn [here](https://zenn.dev/naoki0103) and on Qiita [here](https://qiita.com/C-Naoki), respectively. In addition, I use this [zenn-qiita-sync](https://github.com/C-Naoki/zenn-qiita-sync) to synchronize Qiita articles with Zenn articles.
+技術ブログ記事を管理するためのリポジトリです。[Zenn](https://zenn.dev/)と[Qiita](https://qiita.com/)の両方で記事を公開しています。主に自分が作成したコードを共有し、学んだことを記録する場所として利用しています。[zenn-qiita-sync](https://github.com/C-Naoki/zenn-qiita-sync)を使用して、Zenn 記事と Qiita 記事を自動同期しています。
 
-## Directory Structure
+## ディレクトリ構成
 
-- `.github/workflows/`: It contains GitHub Actions workflows.
-- `articles/`: It contains Zenn articles written in Markdown format.
-- `books/`: It contains Zenn books. The structure should follow the Zenn book guidelines.
-- `images/`: It contains images used in articles and books.
-- `qiita/`: It contains Qiita articles, which are generated from Zenn articles by `ztoq.sh`.
+- `.github/workflows/`: GitHub Actions のワークフローファイル
+- `articles/`: Zenn 記事（Markdown 形式）
+- `books/`: Zenn の本
+- `images/`: 記事や本で使用する画像
+- `qiita/`: Qiita 記事（Zenn 記事から自動生成される）
+- `scripts/`: 変換スクリプト
 
-## Getting Started
-Run the development server:
+## 開発方法
+
+### Zenn 記事のプレビュー
+
+プレビューサーバーを起動：
+
 ```bash
 npx zenn preview
 ```
-- Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
 
-When you want to write a new article:
+- ブラウザで [http://localhost:8000](http://localhost:8000) を開くとプレビューが確認できます
+
+### Qiita 記事のプレビュー
+
+プレビューサーバーを起動：
+
 ```bash
-npx zenn new:article --slug 記事のスラッグ --title タイトル --type idea --emoji ✨
+cd qiita
+npx qiita preview
 ```
-- The above command's options are as follows:
-    - `--slug`: The slug of the article. This needs to be a combination of `a-z0-9`, `hyphen (-)`, and `underscore (_)` with 12 to 50 characters.
-    - `--title`: The title of the article.
-    - `--type`: The type of the article. The options should be chosen from `tech`, `idea`.
-    - `--emoji`: The emoji of the article.
+
+- ブラウザで [http://localhost:8888](http://localhost:8888) を開くとプレビューが確認できます
+
+### 新規記事の作成
+
+```bash
+npx zenn new:article --slug 記事のスラッグ --title タイトル --type tech --emoji ✨
+```
+
+オプション：
+
+- `--slug`: 記事のスラッグ（a-z0-9、ハイフン、アンダースコアの組み合わせ、12〜50 文字）
+- `--title`: 記事のタイトル
+- `--type`: `tech` または `idea`
+- `--emoji`: 記事の絵文字
+
+## 自動同期について
+
+main/master ブランチへの push 時に、GitHub Actions が以下を自動実行します：
+
+1. Zenn 記事を Qiita 記事に変換（コミットメッセージ: `🔄 auto: synchronize qiita articles`）
+2. Qiita CLI での更新（コミットメッセージ: `🔄 auto: update using qiita-cli`）
+
+※ 自動同期には`QIITA_TOKEN`シークレットの設定が必要です
+
+## 注意事項
+
+- 記事の編集は`articles/`ディレクトリ内の Markdown ファイルを直接編集してください
+- `qiita/`ディレクトリ内のファイルは自動生成されるため、手動編集しないでください
