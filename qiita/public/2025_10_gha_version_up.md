@@ -1,16 +1,15 @@
 ---
 title: GitHub ActionsでiOSアプリのバージョン番号を更新するPull Requestを作成する
+private: false
 tags:
   - GitHub
   - Xcode
   - iOS
   - GitHubActions
-private: false
 updated_at: '2025-10-06T14:17:10+09:00'
 id: 64dc3156febb87f08ecf
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに
@@ -44,8 +43,7 @@ https://qiita.com/tichise/items/cc160125a706585d3ced
 
 `YOUR_PROJECT_NAME`の部分だけ自分のプロジェクト名に変更してください。project.pbxproj を取得するための必要です。(e.g. `YOUR_PROJECT_NAME.xcodeproj/project.pbxproj`)
 
-```yaml
-# versionup.yml
+```yaml:versionup.yml
 name: Manual Version up
 
 on:
