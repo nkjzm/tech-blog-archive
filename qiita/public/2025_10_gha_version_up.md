@@ -5,8 +5,8 @@ tags:
   - Xcode
   - iOS
   - GitHubActions
-private: false
-updated_at: '2025-10-05T18:38:44+09:00'
+private: true
+updated_at: "2025-10-05T18:35:09+09:00"
 id: 64dc3156febb87f08ecf
 organization_url_name: null
 slide: false
