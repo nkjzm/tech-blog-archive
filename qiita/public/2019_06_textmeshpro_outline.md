@@ -1,13 +1,12 @@
 ---
 title: 【Unity】TextMesh Proで文字を潰さず縁取りする方法 (Editor & Script)
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: 5b8129b5cd94f202e6e9
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

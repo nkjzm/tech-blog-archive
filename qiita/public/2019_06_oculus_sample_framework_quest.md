@@ -1,15 +1,14 @@
 ---
 title: OculusのSampleFramework全シーンをQuest実機で動かしてみた【Unity】
+private: false
 tags:
   - Unity
   - VR
   - OculusQuest
-private: false
 updated_at: '2019-06-14T18:14:07+09:00'
 id: 58a696f66c4989e5a35c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # TL;DR
 

@@ -1,13 +1,12 @@
 ---
 title: Filmarksから特定ユーザーの観た映画一覧を取得するスクリプト
+private: false
 tags:
   - GoogleAppsScript
-private: false
 updated_at: '2018-08-01T11:37:36+09:00'
 id: 19d8a38301da3a6ee343
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # 出来ること
 

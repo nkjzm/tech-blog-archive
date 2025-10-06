@@ -1,14 +1,13 @@
 ---
 title: GASのコードをGithub管理するChrome拡張が便利
+private: false
 tags:
   - GitHub
   - GoogleAppsScript
-private: false
 updated_at: '2017-12-29T20:28:47+09:00'
 id: d384896d01ac3ff6f91c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # 紹介するもの
 

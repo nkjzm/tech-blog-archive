@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】2.7 モダリティ間相互作用と認知特性
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:24:11+09:00'
 id: ca4f75918f7e66def83c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

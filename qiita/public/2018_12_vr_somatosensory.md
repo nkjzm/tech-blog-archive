@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】2.4 体性感覚・内臓感覚
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:19:31+09:00'
 id: b8ca0a4223e2bcc69ba6
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】3.3 出力インターフェース
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-21T06:10:50+09:00'
 id: 072aa4c422ef1bdfdbaf
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

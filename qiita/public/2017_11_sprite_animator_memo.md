@@ -1,13 +1,12 @@
 ---
 title: 2dスプライトアニメーションをAnimatorで制御する時の備忘録
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2017-11-06T22:39:55+09:00'
 id: 72f6744fda4c1c8a39c5
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 スプライトアニメーションは連続画像を複数選択してScene上にドラッグドロップするだけでAnimationファイルとAnimatorContollerファイルを作成してくれ、簡単に扱えると思うのですが、要件的に少し特殊なことをしようとしてハマったので備忘録として残します。
 

@@ -1,13 +1,12 @@
 ---
 title: 【Unity】クリック座標を指定してButton/ToggleのOnPointerClick()を発火させる【TestRunner】
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: cad6582875169751921b
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに

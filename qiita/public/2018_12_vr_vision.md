@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】2.2 視覚
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:01:10+09:00'
 id: 00e4223c7b5989a3d07b
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

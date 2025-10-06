@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】4.2.2 視覚レンダリングとモデル
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-22T06:53:09+09:00'
 id: 29bb8495ed25cc2e6212
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

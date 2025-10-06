@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】1.1 バーチャルリアリティとは何か
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T00:52:30+09:00'
 id: 47f8c05a7e7b789aa65f
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

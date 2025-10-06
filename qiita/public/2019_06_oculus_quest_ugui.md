@@ -1,15 +1,14 @@
 ---
 title: Oculus QuestでuGUIを操作する
+private: false
 tags:
   - Unity
   - VR
   - OculusQuest
-private: false
 updated_at: '2019-06-18T05:07:15+09:00'
 id: 8a62cfab348eacff9167
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

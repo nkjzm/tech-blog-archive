@@ -1,17 +1,16 @@
 ---
 title: Google VR SDKの入力クラスをZenjectで抽象化する
+private: false
 tags:
   - Unity
   - Oculus
   - VR
   - daydream
   - Zenject
-private: false
 updated_at: '2018-07-25T19:57:06+09:00'
 id: 06dfeccca506808b1cbf
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

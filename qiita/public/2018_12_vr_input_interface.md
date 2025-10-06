@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】3.2 入力インターフェース
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:25:10+09:00'
 id: 0648f0a7b800cbc6fd2e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

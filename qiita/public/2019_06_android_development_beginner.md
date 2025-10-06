@@ -1,13 +1,12 @@
 ---
 title: 非Androidエンジニアが既存プロジェクトを雰囲気で開発する時の足がかり
+private: false
 tags:
   - Android
-private: false
 updated_at: '2019-06-12T15:38:36+09:00'
 id: a89be1bf9701a2a90250
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 ![ダウンロード.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55365/03098ba6-b116-fab3-db0a-657074e86b27.png)

@@ -1,13 +1,12 @@
 ---
 title: Unity 2019.1xのPackage ManagerにおけるGitHubリポジトリとの関係
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:15+09:00'
 id: b1113c0881878ce9e22d
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

@@ -1,13 +1,12 @@
 ---
 title: '【YouTube, Twitch】Restream+棒読みちゃんでコメント読み上げ ※2018/07/24現在'
+private: false
 tags:
   - 正規表現
-private: false
 updated_at: '2018-07-24T04:07:54+09:00'
 id: 07f24a242ae4538060a4
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # デモ

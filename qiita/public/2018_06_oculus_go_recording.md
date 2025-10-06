@@ -1,13 +1,12 @@
 ---
 title: Vysor + VLCでOculus Goを録画する
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-06-26T09:03:38+09:00'
 id: 1dec06e74211fe646145
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

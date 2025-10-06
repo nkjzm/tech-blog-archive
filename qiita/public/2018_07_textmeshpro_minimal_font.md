@@ -1,13 +1,12 @@
 ---
 title: TextMeshProで最小限のフォントアセットを作る
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2018-07-07T16:02:18+09:00'
 id: 26f3edb563defd4d418c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 TextMeshProは軽量でリッチなテキスト表示ができるアセットですが、事前に独自の形式のフォントアセットを作成する必要があります。しかし、常用漢字などを全てアセットに含めると、フォントアセットのサイズがかなり大きくなってしまいます。(→メモリ容量の圧迫など)

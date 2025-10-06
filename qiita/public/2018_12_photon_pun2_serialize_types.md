@@ -1,13 +1,12 @@
 ---
 title: Photon PUN2のOnPhotonSerializeView()で送受信できる型一覧
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2018-12-20T20:59:19+09:00'
 id: 95abbc3a13a089b0abc3
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

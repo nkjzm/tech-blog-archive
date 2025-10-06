@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】4.3.3 物体のシミュレーション
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:33:48+09:00'
 id: 8c2cf43f19ee845b9964
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

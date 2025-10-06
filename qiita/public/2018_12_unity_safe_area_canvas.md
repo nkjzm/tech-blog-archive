@@ -1,13 +1,12 @@
 ---
 title: 【Unity】これ以上iOSのSafeAreaで消耗したくない人のため『Unity-SafeAreaCanvas』
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:15+09:00'
 id: e395e6da9ca46963dba9
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

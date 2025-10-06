@@ -1,13 +1,12 @@
 ---
 title: '姿勢推定メモ '
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-10-04T17:06:59+09:00'
 id: 2714e96c5f289e0c1203
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 RGB画像から姿勢推定する技術の話
 

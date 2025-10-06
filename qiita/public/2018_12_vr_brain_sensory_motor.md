@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】2.1 脳神経系と感覚・運動
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T00:55:04+09:00'
 id: dd8f9236c33e0f2afb7c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

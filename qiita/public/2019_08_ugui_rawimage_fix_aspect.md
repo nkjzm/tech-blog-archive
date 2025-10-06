@@ -1,13 +1,12 @@
 ---
 title: 【uGUI】元サイズに合わせて適切にアスペクト比を修正するRawImageの拡張メソッド【FixAspect()】
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: 7d1ffcb2b8dce38bd2d8
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 この記事は[「Unityゆるふわサマーアドベントカレンダー 2019」](https://qiita.com/nkjzm/items/7c933bb5c772a0b75512) 27日目の代理投稿です。昨日は@UnagiHuman さんの[「OculusQuestとRealsenseを接続してPointCloudを見る」](https://qiita.com/UnagiHuman/items/b654430fccb26af0c0a5)でした。
 

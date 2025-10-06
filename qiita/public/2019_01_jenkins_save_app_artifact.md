@@ -1,14 +1,13 @@
 ---
 title: Jenkinsの「成果物を保存」で.appの保存に失敗した時の備忘録
+private: false
 tags:
   - Jenkins
   - Unity
-private: false
 updated_at: '2019-01-27T11:16:54+09:00'
 id: b66a231926c76d28369e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # 状況
 

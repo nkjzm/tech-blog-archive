@@ -1,14 +1,13 @@
 ---
 title: VRIK(FinalIK)を適用するとVRMの揺れもの(VRM Spring Bone)の動きがおかしくなる時の対処
+private: false
 tags:
   - Unity
   - VR
-private: false
 updated_at: '2018-08-09T21:25:10+09:00'
 id: 57d6fe67eb35abc9eb4e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # 原因

@@ -1,13 +1,12 @@
 ---
 title: 'Unityゆるふわサマーアドベントカレンダー 2019 #ゆるふわアドカレ'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2019-09-06T14:37:45+09:00'
 id: 7c933bb5c772a0b75512
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

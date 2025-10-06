@@ -1,13 +1,12 @@
 ---
 title: LGTM画像を作るときのメモ
+private: false
 tags:
   - GitHub
-private: false
 updated_at: '2018-08-30T23:58:04+09:00'
 id: 55aeb9adfb061d17325f
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 **※ 著作権の扱いには十分に注意して行ってください。**
 

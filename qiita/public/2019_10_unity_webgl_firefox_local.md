@@ -1,13 +1,12 @@
 ---
 title: UnityのWebGLビルドをFirefox 68.0 以降でローカル実行する方法
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: 81289eda74608b73ae52
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # ※追記
 

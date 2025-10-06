@@ -1,14 +1,13 @@
 ---
 title: 【Unity】C#で点と扇形の内外判定の実装 (EditModeテスト付き)
+private: false
 tags:
   - C#
   - Unity
-private: false
 updated_at: '2018-07-29T21:15:06+09:00'
 id: 64539eb20de15a5d2f44
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

@@ -1,13 +1,12 @@
 ---
 title: ドキュメント共有ツールの検討メモ
+private: false
 tags:
   - Markdown
-private: false
 updated_at: '2018-07-07T15:53:06+09:00'
 id: 40f72452df5789bf28cd
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 #　観点
 

@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】2.3 聴覚
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:14:04+09:00'
 id: 0d5db04f6a60690b48d6
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

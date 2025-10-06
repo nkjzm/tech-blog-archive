@@ -1,15 +1,14 @@
 ---
 title: UnityでiOSとAndroidのバージョニングについてまとめた
+private: false
 tags:
   - Android
   - iOS
   - Unity
-private: false
 updated_at: '2018-08-06T12:38:01+09:00'
 id: 492cfc1103b8a124770a
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 各環境ごとに微妙に文言が統一されておらず、混乱したのでまとめました。
 以下のキーワードを使うと検索しやすいと思います。

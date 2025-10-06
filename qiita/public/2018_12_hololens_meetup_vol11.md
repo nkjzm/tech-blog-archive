@@ -1,13 +1,12 @@
 ---
 title: '[簡単まとめ] Tokyo HoloLens ミートアップ vol.11　忘年会スペシャル！'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-18T14:25:50+09:00'
 id: 677e3cb7296579bc3b1c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

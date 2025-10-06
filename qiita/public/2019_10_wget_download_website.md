@@ -1,13 +1,12 @@
 ---
 title: 【wget】Webサイトを丸ごとローカル環境にダウンロードする備忘録
+private: false
 tags:
   - Linux
-private: false
 updated_at: '2025-10-06T21:48:16+09:00'
 id: aa60bfa58a854e59e579
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

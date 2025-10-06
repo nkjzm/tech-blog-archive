@@ -1,13 +1,12 @@
 ---
 title: 【VR学まとめ】4.1 総論
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:26:24+09:00'
 id: be67688ec1969c7bfd65
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 
