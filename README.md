@@ -58,6 +58,38 @@ main/master ブランチへの push 時に、GitHub Actions が以下を自動�
 
 ※ 自動同期には`QIITA_TOKEN`シークレットの設定が必要です
 
+## 記事IDの仕組み
+
+### Zenn記事のID
+
+Zenn記事のIDはファイル名で決まります。`articles/`ディレクトリ内のファイル名が記事のslugとして使用されます。
+
+例：`articles/2023_02_unity_open_folder_runtime.md` → slug: `2023_02_unity_open_folder_runtime`
+
+### Qiita記事のID
+
+Qiita記事のIDは、記事のfrontmatterにある`id`フィールドで管理されます。このIDはQiitaサーバー側で自動生成され、記事のURLに使用されます。
+
+例：
+```yaml
+---
+title: タイトル
+id: e9d326f3bd0462eba897  # Qiitaの記事ID
+---
+```
+
+記事URL: `https://qiita.com/ユーザー名/items/e9d326f3bd0462eba897`
+
+### 同期時の対応関係
+
+Zenn記事をQiita記事に変換する際、`articles/`と`qiita/public/`で**同じファイル名**を使用して対応付けています。
+
+例：
+- `articles/2023_02_unity_open_folder_runtime.md` (Zenn記事)
+- `qiita/public/2023_02_unity_open_folder_runtime.md` (Qiita記事)
+
+変換時には、`qiita/public/`に同名ファイルが存在するかどうかで、新規作成か更新かを判定します。
+
 ## 注意事項
 
 - 記事の編集は`articles/`ディレクトリ内の Markdown ファイルを直接編集してください
