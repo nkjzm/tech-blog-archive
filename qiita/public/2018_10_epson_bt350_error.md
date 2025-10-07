@@ -1,13 +1,13 @@
 ---
 title: Epson BT-350 Update Toolの起動後に「このアプリケーションのサイドバイサイド構成が正しくないため～」と言われた時の対処
-published_at: '2018-10-16 10:11'
-private: false
 tags:
   - AR
-updated_at: '2018-10-16T10:11:31+09:00'
+private: false
+updated_at: '2025-10-07T21:27:39+09:00'
 id: 521f6147dd424c357141
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 ## 状況
