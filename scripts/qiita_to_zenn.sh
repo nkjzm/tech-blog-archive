@@ -41,12 +41,6 @@ convert_article() {
     local filename="$(basename "$qiita_file")"
     local zenn_file="$ARTICLES_DIR/$filename"
 
-    # すでに存在する場合はスキップ
-    if [ -f "$zenn_file" ]; then
-        echo "スキップ: $filename (すでに存在)"
-        return 0
-    fi
-
     echo "変換中: $filename"
 
     # ファイルを読み込み、ヘッダーと本文を分離
@@ -146,6 +140,7 @@ emoji: "$emoji"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: $topics_str
 published: $published
+published_at: $updated_at
 ---
 EOF
 
@@ -195,21 +190,11 @@ main() {
         # 全ファイル処理
         local total=0
         local converted=0
-        local skipped=0
 
         for qiita_file in "$QIITA_DIR"/*.md; do
             total=$((total + 1))
-
-            if convert_article "$qiita_file"; then
-                if [ -f "$ARTICLES_DIR/$(basename "$qiita_file")" ]; then
-                    # 新規変換かスキップかを判定（メッセージで判別）
-                    if grep -q "スキップ" <<< "$(convert_article "$qiita_file" 2>&1)"; then
-                        skipped=$((skipped + 1))
-                    else
-                        converted=$((converted + 1))
-                    fi
-                fi
-            fi
+            convert_article "$qiita_file"
+            converted=$((converted + 1))
         done
 
         echo ""
@@ -217,7 +202,6 @@ main() {
         echo "変換完了"
         echo "  - 総ファイル数: $total"
         echo "  - 変換済み: $converted"
-        echo "  - スキップ: $skipped"
         echo "=========================================="
     fi
 }
