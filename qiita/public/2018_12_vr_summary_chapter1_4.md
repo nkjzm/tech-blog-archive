@@ -1,12 +1,13 @@
 ---
 title: 『バーチャルリアリティ学』１〜４章まとめ
-private: false
 tags:
   - VR
+private: false
 updated_at: '2018-12-24T01:49:04+09:00'
 id: 9a897b005c6640ef242a
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

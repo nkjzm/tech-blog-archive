@@ -1,12 +1,13 @@
 ---
 title: 【Unity】ドコモAIエージェントAPI SpeakSDKのサンプルをEditor上で実行する
-private: false
 tags:
   - Unity
+private: false
 updated_at: '2020-05-09T12:32:39+09:00'
 id: bdff6d7986144197439e
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 # 初めに

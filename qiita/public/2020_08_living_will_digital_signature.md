@@ -1,12 +1,13 @@
 ---
 title: 尊厳死に対する事前指示書（リビングウィル）に電子署名をしてみた
-private: false
 tags:
   - Security
+private: false
 updated_at: '2020-08-30T10:19:23+09:00'
 id: 28751a2763dc2e4bb8e3
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 # はじめに

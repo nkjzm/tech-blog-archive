@@ -1,12 +1,13 @@
 ---
 title: LookingGlassのHoloPlay SDKのマイグレーションメモ(0.1.4->1.0.0)
-private: false
 tags:
   - Unity
+private: false
 updated_at: '2019-03-31T15:32:03+09:00'
 id: 22841911f57308ac7afb
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

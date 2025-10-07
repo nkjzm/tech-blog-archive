@@ -1,12 +1,13 @@
 ---
 title: Vive Focusでプレイエリア制限(Out of boundary)を解除して歩き回る方法
-private: false
 tags:
   - VR
+private: false
 updated_at: '2018-11-26T17:01:37+09:00'
 id: bf69dd6ec927face6d98
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

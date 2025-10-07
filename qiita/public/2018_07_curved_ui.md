@@ -1,13 +1,14 @@
 ---
 title: Curved UIの紹介とハマったこと
-private: false
 tags:
   - Unity
   - VR
+private: false
 updated_at: '2018-07-07T16:08:20+09:00'
 id: 748e825b419d52df0e91
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # Curved UIとは
 uGUIのキャンバスをカーブさせられるアセット

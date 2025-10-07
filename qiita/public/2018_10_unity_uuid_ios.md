@@ -1,13 +1,14 @@
 ---
 title: UnityでUUIDを生成する方法と、iOSからみる端末固有IDの考察
-private: false
 tags:
   - iOS
   - Unity
+private: false
 updated_at: '2018-10-12T17:04:33+09:00'
 id: 06dd56736a37ef915936
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 ## UnityでUUIDを生成する方法
 

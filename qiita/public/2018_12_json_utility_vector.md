@@ -1,12 +1,13 @@
 ---
 title: 'JsonUtilityでVector2, Vector3をシリアライズする'
-private: false
 tags:
   - Unity
+private: false
 updated_at: '2018-12-28T15:36:04+09:00'
 id: 770dae999f2978de94ff
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

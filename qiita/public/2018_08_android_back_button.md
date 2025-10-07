@@ -1,13 +1,14 @@
 ---
 title: UnityでAndroidのバックボタン対応を1行で解決する
-private: false
 tags:
   - Android
   - Unity
+private: false
 updated_at: '2018-08-06T12:38:36+09:00'
 id: c79ace68e4fe5f06d44b
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # やりたいこと
 AndroidのBackボタン(左向きの三角ボタン)を押した時にアプリを終了させたい時の話です。

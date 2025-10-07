@@ -1,12 +1,13 @@
 ---
 title: uGUIのInputFieldで編集できない入力フォームを作る
-private: false
 tags:
   - Unity
+private: false
 updated_at: '2018-09-29T00:39:46+09:00'
 id: 246073f1feaa79ef7b52
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # 検証環境
 

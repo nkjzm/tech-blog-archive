@@ -1,12 +1,13 @@
 ---
 title: 【Unity】プロジェクトのルートの名前空間を指定する【Rider】
-private: false
 tags:
   - Unity
+private: false
 updated_at: '2021-09-30T21:12:05+09:00'
 id: b333138e605769281447
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

@@ -1,12 +1,13 @@
 ---
 title: GitHub PagesでPodcastサーバーを立ち上げるYattecastのコスパが最強だったので紹介する
-private: false
 tags:
   - GitHub
+private: false
 updated_at: '2019-05-02T14:53:11+09:00'
 id: 32e585a0a6011ae117c5
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 ## TL; DR
 

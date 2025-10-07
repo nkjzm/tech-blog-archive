@@ -1,14 +1,15 @@
 ---
 title: OculusGoのコントローラーをUnity上でエミュレートする
-private: false
 tags:
   - C#
   - Unity
   - VR
+private: false
 updated_at: '2018-12-20T21:50:36+09:00'
 id: 83d3ab0862fbfef86b63
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

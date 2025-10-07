@@ -1,12 +1,13 @@
 ---
 title: Daydream対応端末 スペックまとめ
-private: false
 tags:
   - VR
+private: false
 updated_at: '2017-11-06T22:27:40+09:00'
 id: e9d326f3bd0462eba897
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 **2017/11時点の情報をまとめました。**
 

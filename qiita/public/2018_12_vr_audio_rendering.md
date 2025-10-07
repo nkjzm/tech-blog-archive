@@ -1,12 +1,13 @@
 ---
 title: 【VR学まとめ】4.2.3 聴覚レンダリングとモデル
-private: false
 tags:
   - VR
+private: false
 updated_at: '2018-12-24T01:31:55+09:00'
 id: 5ae01203c0f93baa9c13
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

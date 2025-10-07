@@ -1,12 +1,13 @@
 ---
 title: OpenCV For Unityを使ってiPhone上でYOLOを動かす
-private: false
 tags:
   - Unity
+private: false
 updated_at: '2018-10-26T21:33:51+09:00'
 id: 6bbebf264b98b23f180e
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 ## はじめに

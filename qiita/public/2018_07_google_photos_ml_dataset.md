@@ -1,12 +1,13 @@
 ---
 title: 'Googleフォトの自撮りから約7,500枚の学習データを作る'
-private: false
 tags:
   - 機械学習
+private: false
 updated_at: '2018-07-07T15:41:36+09:00'
 id: a36b60b5256381bace5b
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

@@ -1,12 +1,13 @@
 ---
 title: 【VR学まとめ】1.2 VRの要素と構成
-private: false
 tags:
   - VR
+private: false
 updated_at: '2018-12-24T01:06:54+09:00'
 id: 0435c0093e1a62285be1
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

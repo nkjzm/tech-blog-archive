@@ -1,13 +1,14 @@
 ---
 title: Unity用のパッケージ(アセット)を配布する時のお作法
-private: false
 tags:
   - GitHub
   - Unity
+private: false
 updated_at: '2018-08-05T21:55:41+09:00'
 id: db6e9edb7c1495e461b7
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 # はじめに

@@ -1,13 +1,14 @@
 ---
 title: 【Git LFS】OpenCV for Unityをpushしようとして怒られた人が見るページ
-private: false
 tags:
   - Unity
   - ポエム
+private: false
 updated_at: '2018-11-19T18:13:35+09:00'
 id: 89ede8aa10fad30937b4
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 
