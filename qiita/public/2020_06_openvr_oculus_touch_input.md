@@ -1,13 +1,14 @@
 ---
 title: 【Unity】OpenVRで取得できるOculusコントローラー(Touch)のボタン入力
-private: false
 tags:
   - Unity
   - VR
-updated_at: '2025-10-06T21:48:16+09:00'
+private: false
+updated_at: '2020-06-28T21:00:11+09:00'
 id: 768919a00a2e3da08f67
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

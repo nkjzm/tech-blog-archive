@@ -1,12 +1,13 @@
 ---
 title: 競プロでやりがちなC++マクロでfor文を省略するお作法のC#版を考えました
-private: false
 tags:
   - C#
-updated_at: '2025-10-06T21:48:16+09:00'
+private: false
+updated_at: '2019-04-11T16:38:39+09:00'
 id: 63e97fa8b1d883618c3a
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 ## C++の省略for文
 

@@ -1,14 +1,15 @@
 ---
 title: 【Jenkins】GitのSSH接続をするための認証情報を設定する【GitHub】
-private: false
 tags:
   - Git
   - GitHub
   - Jenkins
-updated_at: '2025-10-06T21:48:16+09:00'
+private: false
+updated_at: '2019-11-22T14:27:42+09:00'
 id: 865f71efbf494ed57006
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

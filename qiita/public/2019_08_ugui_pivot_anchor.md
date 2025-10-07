@@ -1,13 +1,14 @@
 ---
 title: uGUIで座標を変えずにPivotとAnchorの値を変えるための拡張メソッド(RectTransform)
-private: false
 tags:
   - C#
   - Unity
-updated_at: '2025-10-06T21:48:15+09:00'
+private: false
+updated_at: '2019-08-13T11:38:11+09:00'
 id: 297fb6921d5caca3eca9
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 ## TL;DR
 

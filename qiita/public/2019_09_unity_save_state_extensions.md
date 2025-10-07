@@ -1,12 +1,13 @@
 ---
 title: 【Unity】既存のSliderやToggleの状態を簡易的に保存する拡張メソッド【SaveStateExtensions】
-private: false
 tags:
   - Unity
-updated_at: '2025-10-06T21:48:16+09:00'
+private: false
+updated_at: '2019-09-25T18:16:12+09:00'
 id: 62f3bce82ed2d75833c0
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 

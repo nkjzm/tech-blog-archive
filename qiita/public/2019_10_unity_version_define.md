@@ -1,12 +1,13 @@
 ---
 title: 【Unity2017.x~】新しいバージョンナンバリングシステムにおける#defineディレクティブ
-private: false
 tags:
   - Untiy
-updated_at: '2025-10-06T21:48:16+09:00'
+private: false
+updated_at: '2019-10-29T13:19:14+09:00'
 id: 42a29285e2dd8db6bb91
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # TL;DR
 

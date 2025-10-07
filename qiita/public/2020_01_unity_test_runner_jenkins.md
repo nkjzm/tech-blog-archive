@@ -1,13 +1,14 @@
 ---
 title: Unity2019.2以降のTest RunnerをJenkinsと連携させる時の備忘録
-private: false
 tags:
   - Jenkins
   - Unity
-updated_at: '2025-10-06T21:48:16+09:00'
+private: false
+updated_at: '2020-01-31T12:25:25+09:00'
 id: 66d3e2ed0035e41a42b6
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 ## はじめに
 
