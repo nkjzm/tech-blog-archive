@@ -1,13 +1,13 @@
 ---
 title: 【Unity】ランタイムで指定したフォルダをファイラーで開く（Mac/Windows）
+published_at: '2023-02-24 02:25'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2023-02-24T02:25:13+09:00'
 id: 7a3bac223a8ad89fb520
 organization_url_name: unity-game-dev-guild
 slide: false
-ignorePublish: false
 ---
 
 # TL;DR
