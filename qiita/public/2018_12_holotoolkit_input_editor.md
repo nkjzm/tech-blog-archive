@@ -1,15 +1,15 @@
 ---
 title: HoloToolkitの入力クラスをエディタ上で操作する
+published_at: '2018-12-14 03:10'
+private: false
 tags:
   - Unity
   - VR
   - HoloLens
-private: false
 updated_at: '2018-12-14T03:10:07+09:00'
 id: a6b3ed7b72bcede7d5dc
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

@@ -1,13 +1,13 @@
 ---
 title: 【VR学まとめ】2.6 味覚・嗅覚
+published_at: '2018-12-24 01:22'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:22:34+09:00'
 id: f6ba815ed3e7a490f2f2
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

@@ -1,13 +1,13 @@
 ---
 title: 【Unity】再帰的に親のCanvasサイズを取得する
+published_at: '2019-08-13 11:34'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2019-08-13T11:34:07+09:00'
 id: ceee01212676e1d3b7ae
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # TL;DR
 

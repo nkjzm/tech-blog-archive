@@ -1,15 +1,15 @@
 ---
 title: 【Unity】Timelineからデバイスの振動を制御する【イージング付き】
+published_at: '2020-12-12 20:07'
+private: false
 tags:
   - Unity
   - Oculus
   - VR
-private: false
 updated_at: '2020-12-12T20:07:45+09:00'
 id: 27b2a6c9ed0cc844a83c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに

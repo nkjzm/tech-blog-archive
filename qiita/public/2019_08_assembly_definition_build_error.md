@@ -1,13 +1,13 @@
 ---
 title: UnityでAssembly Definition Fileを追加したらエディタでのコンパイルは通るがビルドできなくなった人が見るページ
+published_at: '2019-08-01 16:56'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2019-08-01T16:56:34+09:00'
 id: 5994a31bcabfd06e9593
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

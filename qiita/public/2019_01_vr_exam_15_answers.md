@@ -1,13 +1,13 @@
 ---
 title: 第15回VR技術者認定試験（セオリーコース） 模範解答の予想
+published_at: '2019-01-22 12:55'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2019-01-22T12:55:50+09:00'
 id: d4fd092623fbf09cd104
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

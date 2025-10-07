@@ -1,13 +1,13 @@
 ---
 title: 【Unity】コマンドライン引数で単一ビルドに複数ビルドの振る舞いをさせる
+published_at: '2018-08-18 23:30'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2018-08-18T23:30:59+09:00'
 id: 0bb9335111a596b6774f
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに

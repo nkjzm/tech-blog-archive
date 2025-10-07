@@ -1,14 +1,14 @@
 ---
 title: Staticメンバーでキャッシュをする(Vector.zeroの例)
+published_at: '2018-07-07 16:16'
+private: false
 tags:
   - C#
   - Unity
-private: false
 updated_at: '2018-07-07T16:16:06+09:00'
 id: b471fa904b9073859ee5
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 UnityEngineのstaticメンバーの中には、内部で動的な処理が動いているものが存在します。
 今回はそういった動的な処理をキャッシュするための実装について調べてみました。

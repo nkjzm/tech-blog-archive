@@ -1,14 +1,14 @@
 ---
 title: Unity2017.3のAssembly Definition Filesを適切に設定してコンパイルにかかる時間を削減する
+published_at: '2018-07-30 17:14'
+private: false
 tags:
   - C#
   - Unity
-private: false
 updated_at: '2018-07-30T17:14:07+09:00'
 id: aaad87dc7f7bc9703449
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに

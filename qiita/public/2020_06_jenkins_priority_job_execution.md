@@ -1,13 +1,13 @@
 ---
 title: 【Jenkins】特定のジョブを優先実行する【Priority Sorter Plugin】
+published_at: '2020-06-08 22:07'
+private: false
 tags:
   - Jenkins
-private: false
 updated_at: '2020-06-08T22:07:43+09:00'
 id: d47b2e858e98540be02e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # 初めに
 

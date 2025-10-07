@@ -1,15 +1,15 @@
 ---
 title: 【Unity】モバイルアプリのビルド番号を実行時に取得するライブラリを公開しました
+published_at: '2021-06-12 07:22'
+private: false
 tags:
   - Android
   - iOS
   - Untiy
-private: false
 updated_at: '2021-06-12T07:22:40+09:00'
 id: 1d057a2c17e0f5aebc92
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

@@ -1,14 +1,14 @@
 ---
 title: VTuberなどに使われる主要なリップシンク方式の比較メモ
+published_at: '2019-07-01 16:00'
+private: false
 tags:
   - Unity
   - VR
-private: false
 updated_at: '2019-07-01T16:00:25+09:00'
 id: 5fb4f4dbcdaa9bc7cc34
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

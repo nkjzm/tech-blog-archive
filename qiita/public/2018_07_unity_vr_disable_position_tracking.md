@@ -1,14 +1,14 @@
 ---
 title: 【Unity】VRカメラのポジショントラッキングを無効化する
+published_at: '2018-07-07 15:20'
+private: false
 tags:
   - Unity
   - VR
-private: false
 updated_at: '2018-07-07T15:20:22+09:00'
 id: d5cb371a99b0c7e956c2
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

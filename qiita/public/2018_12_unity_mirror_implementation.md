@@ -1,15 +1,15 @@
 ---
 title: Unityで鏡を実装する方法
+published_at: '2018-12-10 22:30'
+private: false
 tags:
   - C#
   - Unity
   - VR
-private: false
 updated_at: '2018-12-10T22:30:30+09:00'
 id: ccba41a6e7e5211aae95
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

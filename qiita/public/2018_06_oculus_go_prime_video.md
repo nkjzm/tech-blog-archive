@@ -1,13 +1,13 @@
 ---
 title: Oculus Goで「デスクトップをリクエスト」してるのにAmazon Prime Videoが見れない時の対処法
+published_at: '2018-06-27 09:38'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-06-27T09:38:34+09:00'
 id: 2ecad08a8da15d4794b5
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # よく紹介されている手順
 

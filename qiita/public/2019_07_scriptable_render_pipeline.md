@@ -1,14 +1,14 @@
 ---
 title: 1分で理解するScriptable Render Pipeline(SRP)の概略と使い方
+published_at: '2019-07-05 18:33'
+private: false
 tags:
   - Unity
   - VR
-private: false
 updated_at: '2019-07-05T18:33:17+09:00'
 id: 60aeabd42a83c1d8c098
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # TL;DR
 

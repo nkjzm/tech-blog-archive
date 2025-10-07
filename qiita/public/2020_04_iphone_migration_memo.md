@@ -1,13 +1,13 @@
 ---
 title: 'iPhone->iPhoneの個人的移行手順メモ (二段階認証, Wallet, LINE)'
+published_at: '2020-04-24 13:03'
+private: false
 tags:
   - iOS
-private: false
 updated_at: '2020-04-24T13:03:17+09:00'
 id: 74a21b2141babe43c799
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

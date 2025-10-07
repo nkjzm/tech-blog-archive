@@ -1,15 +1,15 @@
 ---
 title: Oculus Questコントローラーが持つ複数のキーマッピングについて
+published_at: '2019-06-24 18:01'
+private: false
 tags:
   - Unity
   - VR
   - OculusQuest
-private: false
 updated_at: '2019-06-24T18:01:34+09:00'
 id: 96cd9cddc645c45dd5e5
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

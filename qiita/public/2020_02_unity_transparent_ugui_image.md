@@ -1,13 +1,13 @@
 ---
 title: 描画負荷がかからない透明なuGUI Imageを作る【Unity】
+published_at: '2020-02-06 10:33'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2020-02-06T10:33:37+09:00'
 id: e77b004166cc779e13c7
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

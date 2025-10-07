@@ -1,15 +1,15 @@
 ---
 title: 【Oculus Quest】OVRGrabbableでかっこよく銃を実装する
+published_at: '2019-06-23 21:28'
+private: false
 tags:
   - Unity
   - VR
   - OculusQuest
-private: false
 updated_at: '2019-06-23T21:28:52+09:00'
 id: 5ca336343c51603e31e9
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

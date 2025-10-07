@@ -1,14 +1,14 @@
 ---
 title: 【Unity】ビルドしたアプリの実行時エラーをSlackに通知する
+published_at: '2020-04-03 16:00'
+private: false
 tags:
   - Unity
   - Slack
-private: false
 updated_at: '2020-04-03T16:00:08+09:00'
 id: e27a6805fbf4e472c1d5
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

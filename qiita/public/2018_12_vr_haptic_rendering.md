@@ -1,13 +1,13 @@
 ---
 title: 【VR学まとめ】4.2.4 力触覚レンダリングとモデル
+published_at: '2018-12-22 08:04'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-22T08:04:56+09:00'
 id: 89186ed21bd89310e71b
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

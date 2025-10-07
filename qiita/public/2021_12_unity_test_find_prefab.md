@@ -1,13 +1,13 @@
 ---
 title: 【Unity】テスト対象のプレハブを名前で検索するUtilityメソッド
+published_at: '2021-12-09 23:57'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2021-12-09T23:57:39+09:00'
 id: 9124a48c1dcba1e7194c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

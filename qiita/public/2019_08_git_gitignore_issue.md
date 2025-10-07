@@ -1,14 +1,14 @@
 ---
 title: GitでUntracked filesなのに.gitignore効かない時の原因
+published_at: '2019-08-05 15:28'
+private: false
 tags:
   - Git
   - Unity
-private: false
 updated_at: '2019-08-05T15:28:49+09:00'
 id: 269ed251e44b52fa70cc
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # 前提
 

@@ -1,14 +1,14 @@
 ---
 title: 【C#】Enumから任意の文字列配列への変換を安全に行う【Unity】
+published_at: '2022-12-19 08:17'
+private: false
 tags:
   - C#
   - Unity
-private: false
 updated_at: '2022-12-19T08:17:16+09:00'
 id: cfa45ca106d7aa4bc74d
 organization_url_name: mydearest
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

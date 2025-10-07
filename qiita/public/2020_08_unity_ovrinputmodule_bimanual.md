@@ -1,14 +1,14 @@
 ---
 title: OVRInputModuleによるuGUI操作を両手に対応させる【Unity】
+published_at: '2020-08-26 02:15'
+private: false
 tags:
   - Unity
   - VR
-private: false
 updated_at: '2020-08-26T02:15:35+09:00'
 id: e05081052b9af212ea9b
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

@@ -1,13 +1,13 @@
 ---
 title: '【Unity】NatShareでツイート後に報酬を付与する #アセットアドカレ2021'
+published_at: '2021-08-02 10:54'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2021-08-02T10:54:22+09:00'
 id: f5002c72ed3bca1d6ce5
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

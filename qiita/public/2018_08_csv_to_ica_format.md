@@ -1,13 +1,13 @@
 ---
 title: .csvの情報を.ica形式に整形するメモ
+published_at: '2018-08-28 08:49'
+private: false
 tags:
   - メモ
-private: false
 updated_at: '2018-08-28T08:49:58+09:00'
 id: c03585458373bf978d02
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

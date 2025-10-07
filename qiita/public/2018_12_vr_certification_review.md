@@ -1,13 +1,13 @@
 ---
 title: 第12回VR技術者認定試験の振り返りとポイント
+published_at: '2018-12-24 01:03'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:03:47+09:00'
 id: 21fd7d9f62334d428061
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

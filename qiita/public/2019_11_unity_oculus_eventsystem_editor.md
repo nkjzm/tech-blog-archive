@@ -1,14 +1,14 @@
 ---
 title: 【Unity】Oculus向けのEventSystemをEditor上から操作できる形に置き換える
+published_at: '2019-11-05 03:32'
+private: false
 tags:
   - Unity
   - VR
-private: false
 updated_at: '2019-11-05T03:32:12+09:00'
 id: ecf270f73cbf5a8fd530
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

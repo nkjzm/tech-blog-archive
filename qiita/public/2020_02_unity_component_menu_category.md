@@ -1,13 +1,13 @@
 ---
 title: 【Unity】独自コンポーネントをCreate/AddComponentの既存カテゴリ階層に追加する
+published_at: '2020-02-07 14:43'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2020-02-07T14:43:08+09:00'
 id: 9680ac7fa2349793cfa2
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ![Feb-07-2020 01-19-36.gif](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55365/bb0b62ea-9216-21db-d9ed-708419882de6.gif)
 

@@ -1,13 +1,13 @@
 ---
 title: 【初心者向け】Hugo + GitHub Pagesで静的なポートフォリオを作る
+published_at: '2022-02-24 00:32'
+private: false
 tags:
   - GitHub
-private: false
 updated_at: '2022-02-24T00:32:06+09:00'
 id: ab8595f185348de7ba7e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ※ この記事は[自身のブログ記事](http://kohki.hatenablog.jp/entry/hugo-portfolio)を再編したものです。
 

@@ -1,13 +1,13 @@
 ---
 title: Googleが規定する品質要件から見るDaydreamプラットフォームの特徴
+published_at: '2018-08-14 02:40'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-08-14T02:40:55+09:00'
 id: 287ca1b59e3c89f0964c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 この記事は、AbemaTV Advent Calendar 2017 の4日目の記事です。
 https://adventar.org/calendars/2216

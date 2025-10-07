@@ -1,14 +1,14 @@
 ---
 title: Bose ARでVTuberっぽいアプリを作る方法
+published_at: '2019-04-01 00:02'
+private: false
 tags:
   - Unity
   - VR
-private: false
 updated_at: '2019-04-01T00:02:11+09:00'
 id: 9dfd713b6226debf9be8
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

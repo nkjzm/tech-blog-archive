@@ -1,14 +1,14 @@
 ---
 title: Unityでインポートしたテクスチャの色味がおかしい
+published_at: '2018-07-07 16:05'
+private: false
 tags:
   - Android
   - Unity
-private: false
 updated_at: '2018-07-07T16:05:01+09:00'
 id: 1acc5c06bcd8fb7c1165
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # 現象
 

@@ -1,15 +1,15 @@
 ---
 title: Oculus  Questで空間を自由に移動するデバッグ用スクリプト
+published_at: '2019-06-18 04:46'
+private: false
 tags:
   - Unity
   - VR
   - OculusQuest
-private: false
 updated_at: '2019-06-18T04:46:48+09:00'
 id: 72ff0406e02c1cc7075c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

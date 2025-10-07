@@ -1,13 +1,13 @@
 ---
 title: iOS12betaで開発する時の環境準備の備忘録
+published_at: '2018-06-17 17:19'
+private: false
 tags:
   - iOS
-private: false
 updated_at: '2018-06-17T17:19:06+09:00'
 id: bc9b0939f339e9e3eb7a
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ARKit2 betaを使うために初めてiOSのbeta版導入したので、その時のメモ
 必要条件じゃない可能性もあるけど、一応この通りにすれば動くはず

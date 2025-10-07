@@ -1,13 +1,13 @@
 ---
 title: '[iOSでも動く] SALSAでバーチャルYouTuber向けのリップシンクを導入する方法'
+published_at: '2018-12-26 13:27'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2018-12-26T13:27:46+09:00'
 id: 18c6ab7f5428076ab413
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

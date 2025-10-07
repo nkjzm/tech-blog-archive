@@ -1,13 +1,13 @@
 ---
 title: Jenkins + Doxygen Pluginでドキュメントの自動生成
+published_at: '2018-07-07 15:37'
+private: false
 tags:
   - Jenkins
-private: false
 updated_at: '2018-07-07T15:37:15+09:00'
 id: e3b14bef62a965208b0e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # できたもの
 

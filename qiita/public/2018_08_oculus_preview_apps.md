@@ -1,13 +1,13 @@
 ---
 title: Oculus Goで招待されたPreview Appsを起動する方法
+published_at: '2018-08-14 02:36'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-08-14T02:36:55+09:00'
 id: 2e0a0f3ad31bd63aee6b
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに

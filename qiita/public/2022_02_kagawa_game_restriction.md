@@ -1,14 +1,14 @@
 ---
 title: 【香川県】App Storeのガイドラインに抵触しない「ゲーム依存症対策条例案」対応を実装してみた【Unity】
+published_at: '2022-02-23 20:21'
+private: false
 tags:
   - iOS
   - Unity
-private: false
 updated_at: '2022-02-23T20:21:52+09:00'
 id: 4b0a6600e16a4eff3dbe
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ![タイトルなし3.gif](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55365/3f8fe2e6-9d10-511e-d1eb-9cdc8b5ac610.gif)
 

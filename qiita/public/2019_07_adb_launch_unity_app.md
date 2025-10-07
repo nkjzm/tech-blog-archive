@@ -1,13 +1,13 @@
 ---
 title: adbコマンドでUnity製アプリを起動する
+published_at: '2019-07-29 19:06'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2019-07-29T19:06:21+09:00'
 id: 943c72bc395f26fd192f
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

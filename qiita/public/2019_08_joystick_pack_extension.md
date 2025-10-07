@@ -1,13 +1,13 @@
 ---
 title: 【Unity】uGUIで使える『Joystick Pack』をもっと便利に拡張してみる
+published_at: '2019-08-13 10:15'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2019-08-13T10:15:38+09:00'
 id: 2c977aee580aed001b05
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ![Aug-13-2019 10-13-26.gif](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55365/d4134203-9a4b-c9b5-4b1d-677ed5318f87.gif)
 この記事は[「Unity アセット真夏のアドベントカレンダー 2019 Summer!」](http://assetstore.info/eventandcontest/adventcalendar/eventandcontestadventcalendarasset-adventcalendar2019summer/)10日目の記事です。

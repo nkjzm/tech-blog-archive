@@ -1,13 +1,13 @@
 ---
 title: 【VR学まとめ】4.3.4 人物のシミュレーション
+published_at: '2018-12-24 01:57'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:57:12+09:00'
 id: 01c1f2962b3ec7a704b3
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

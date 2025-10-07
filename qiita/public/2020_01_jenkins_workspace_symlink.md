@@ -1,13 +1,13 @@
 ---
 title: シンボリックリンクでJenkinsのworkspaceパスを変更する
+published_at: '2020-01-28 18:59'
+private: false
 tags:
   - Jenkins
-private: false
 updated_at: '2020-01-28T18:59:43+09:00'
 id: 5fd4fb3dfcba1176937e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 ## はじめに
 

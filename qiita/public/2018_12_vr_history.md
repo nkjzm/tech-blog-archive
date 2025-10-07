@@ -1,13 +1,13 @@
 ---
 title: 【VR学まとめ】1.3 VRの歴史
+published_at: '2018-12-24 01:09'
+private: false
 tags:
   - VR
-private: false
 updated_at: '2018-12-24T01:09:08+09:00'
 id: fdee16db7e0314b68fc9
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

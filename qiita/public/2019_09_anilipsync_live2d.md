@@ -1,14 +1,14 @@
 ---
 title: Live2Dでアニメ調のリップシンクを実現する『AniLipSync-live2d』の使い方
+published_at: '2019-09-19 02:04'
+private: false
 tags:
   - Unity
   - Live2D
-private: false
 updated_at: '2019-09-19T02:04:03+09:00'
 id: b0d283cf8b1f7fdcf91b
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 

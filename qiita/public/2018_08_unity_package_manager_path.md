@@ -1,13 +1,13 @@
 ---
 title: 【Unity】Package Managerの実体パスのメモ
+published_at: '2018-08-14 00:28'
+private: false
 tags:
   - Unity
-private: false
 updated_at: '2018-08-14T00:28:58+09:00'
 id: 8d1d89ba458db12afe6c
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 
