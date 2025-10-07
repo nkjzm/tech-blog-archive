@@ -113,6 +113,14 @@ convert_article() {
         fi
     done < "$qiita_file"
 
+    # updated_atをYYYY-MM-DD hh:mm形式に変換
+    if [ -n "$updated_at" ]; then
+        # ISO8601形式 (2017-11-06T22:27:40+09:00) から YYYY-MM-DD hh:mm に変換
+        # タイムゾーンの形式を +09:00 -> +0900 に変換
+        local date_normalized=$(echo "$updated_at" | sed 's/\([+-][0-9][0-9]\):\([0-9][0-9]\)$/\1\2/')
+        updated_at=$(date -j -f "%Y-%m-%dT%H:%M:%S%z" "$date_normalized" "+%Y-%m-%d %H:%M" 2>/dev/null || echo "$updated_at")
+    fi
+
     # published を決定 (private: false -> published: true)
     local published="true"
     if [ "$private_flag" = "true" ]; then
