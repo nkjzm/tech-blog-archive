@@ -4,6 +4,7 @@ emoji: "🎮"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Unity"]
 published: true
+published_at: 2025-10-06T21:48:16+09:00
 ---
 
 # TL;DR
