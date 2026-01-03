@@ -1,15 +1,16 @@
 ---
 title: Qiitaの記事をZennに移行し、GitHubで同時に管理する
-private: true
 tags:
-  - GitHub
   - Qiita
-  - Zenn
+  - GitHub
   - GitHubActions
-updated_at: '2026-01-03T10:25:24.020Z'
-id: null
+  - Zenn
+private: true
+updated_at: '2026-01-03T19:25:35+09:00'
+id: 990754f252b196de130a
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 # はじめに

@@ -1,15 +1,16 @@
 ---
 title: SwiftDataでバージョン管理されていないスキーマのマイグレーションを実現する
-private: false
 tags:
-  - SwiftData
   - iOS
-  - Swift
   - マイグレーション
-updated_at: '2026-01-03T10:25:24.487Z'
-id: null
+  - Swift
+  - SwiftData
+private: false
+updated_at: '2026-01-03T19:25:35+09:00'
+id: 9cf2fc3d6cebb3d143b2
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 # はじめに
