@@ -2,103 +2,49 @@
 title: "Claude Code Skillsを作ってGitHub Actionsのワークフローテストを快適にした話"
 emoji: "🤖"
 type: "tech"
-topics: ["GitHubActions", "ClaudeCode", "CI/CD", "開発環境"]
+topics: ["GitHubActions","ClaudeCode","CI"]
 published: true
 ---
 
 # はじめに
 
-GitHub Actionsのワークフローを開発している際、「新しく作ったワークフローをテストしたいけど、デフォルトブランチにマージしないと手動実行できない」という問題に直面したことはありませんか？
+GitHub Actionsのワークフローを新規に追加する際の困りごとについて紹介します。
 
-私もClaude Codeを使った開発の中でこの制限が障壁になっていました。テストのためだけにmainブランチにマージするのは避けたいし、かといってPRで確認したくても動作確認できないというジレンマがありました。
+普段の開発では全てのコード変更はPull Requestを通じて行うのですが、ワークフローの新規追加の場合は
 
-そんな時、Thomas Levesque氏のブログ記事で一時的に`pull_request`トリガーを追加する手法を知り、この手順を自動化するためにClaude Code Agent Skillsを作成しました。今回はその経験について紹介したいと思います。
+- Pull Request作成時点で動作確認が完了している状態にしたい
+- workflow_dispatchを使って動作確認する方法があるが、デフォルトブランチにマージされていないとUI上から実行できない仕様がある
 
-# GitHub Actionsの制限と解決方法
+というジレンマに遭遇します。ワークアラウンドとして一度空のワークフローをマージし、その後にPull Requestで修正を加えて動作確認を行う方法をよく使っていましたが、冗長なレビューが発生するなどの問題がありました。
 
-## 制限
+そんな時に下記のブログ記事に出会い、一時的に`pull_request`トリガーを追加する手法を知りました。今回は、この手順を自動化するためにClaude Code Agent Skillsを作成したので、その方法について紹介したいと思います。
 
-GitHub Actionsには、**デフォルトブランチ（main/master）にマージされていないワークフローは手動実行（workflow_dispatch）できない**という仕様があります。これは新しいワークフローを作成する際の大きな課題となります。
+https://thomaslevesque.com/2024/04/25/running-a-github-actions-workflow-that-doesnt-exist-yet-on-the-default-branch/
 
-## 課題
+# アプローチ
 
-- テストのためだけにデフォルトブランチにマージするのは避けたい
-- Pull Requestで確認したいが、動作確認できない
-- ワークフローのバグを本番環境で発見するリスク
-
-## 解決のアイデア
-
-Thomas Levesque氏のブログ記事で紹介されていた方法は以下の通りです：
+ブログ記事で紹介されていた方法は以下の通りです
 
 1. 一時的に`pull_request`トリガーをワークフローファイルに追加
-2. Pull Requestを作成してワークフローを実行させる（これによりGitHubがワークフローを認識）
+2. Pull Requestを作成してワークフローを実行させる（これによりGitHubがワークフローを認識でき、ghコマンドからの実行が可能になる）
 3. 一時的なトリガーを削除
-4. これで手動実行が可能になる
 
-この手順は効果的ですが、毎回手動で行うのは面倒です。そこで、この手順を自動化するためにClaude Code Agent Skillsを作成することにしました。
+実際に試してみて使えることが分かったのですが、毎回Claude Codeに
+URLを渡して実行してもらうのはすこし面倒です。そこで、この手順を自動化するためにClaude Code Agent Skillsを作成することにしました。
 
 # Claude Code Agent Skillsとは
 
-Claude Code Agent Skillsは、**Claude Codeに特定のタスクの実行方法を教えるMarkdownファイル**です。
+Claude Code Agent Skillsは、**Claude Codeに特定のタスクの実行方法を教えるMarkdownファイル**です。PRレビューのテンプレート化やコミットメッセージの生成ルール、繰り返し行う複雑な手順の自動化などに使えます。
 
-## できること
+Claudeが会話の文脈から自動的に適切なSkillを選択して実行するほか、`/test-workflow-on-branch`のように明示的に呼び出すこともできます。
 
-- PRレビューのテンプレート化
-- コミットメッセージの生成ルール
-- プロジェクト固有の自動化タスク
-- 繰り返し行う複雑な手順の自動化
+詳しくは[公式ドキュメント](https://code.claude.com/docs/ja/skills)を参照してください。
 
-## 使い方
+# 作成した `test-workflow-on-branch` スキル
 
-Agent Skillsには2つの使い方があります：
+以下が実際に作成したskill.mdの全文です。このファイルをユーザールートかプロジェクトルートの`.claude/skills/test-workflow-on-branch/skill.md`に配置することで使えるようになります。
 
-1. **自動実行**: Claudeが会話の文脈から自動的に適切なSkillを選択して実行
-2. **明示的呼び出し**: `/スキル名`で明示的に呼び出し可能
-
-例えば、「GitHub Actionsのワークフローをテストしたい」と伝えれば、Claudeが自動的に適切なSkillを選択して実行してくれます。または、`/test-workflow-on-branch`のように明示的に呼び出すこともできます。
-
-## 公式ドキュメント
-
-- [Agent Skills - Claude Code Docs](https://code.claude.com/docs/en/skills)
-- [Agent Skills - Platform Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
-- [GitHub - anthropics/skills](https://github.com/anthropics/skills)
-
-# test-workflow-on-branchスキルの導入方法
-
-それでは、実際にこのスキルをどうやって使い始めるかを説明します。
-
-## 必要なもの
-
-- `gh` (GitHub CLI)
-- `gh auth login`で認証済み
-- ワークフローファイルに`workflow_dispatch`トリガーが設定されていること
-
-## 導入手順
-
-1. **ディレクトリを作成**
-   ```bash
-   mkdir -p ~/.claude/skills/test-workflow-on-branch
-   ```
-
-2. **skill.mdファイルを作成**
-   次のセクションで紹介する全文を`~/.claude/skills/test-workflow-on-branch/skill.md`に配置します。
-
-3. **Claude Codeを再起動**
-   Claude Codeを再起動するか、新しい会話を開始します。
-
-4. **スキルを呼び出し**
-   `/test-workflow-on-branch`で呼び出すか、Claudeに「ワークフローをテストしたい」と伝えます。
-
-## skill.mdの配置場所
-
-- **全プロジェクトで使う場合**: `~/.claude/skills/test-workflow-on-branch/skill.md`
-- **特定プロジェクトのみ**: `.claude/skills/test-workflow-on-branch/skill.md`
-
-# test-workflow-on-branchスキルの全文
-
-以下が、実際に作成したskill.mdの全文です。このファイルをそのまま使用できます。
-
-```markdown
+````markdown
 ---
 name: test-workflow-on-branch
 description: GitHub Actionsのワークフローを現在のブランチで実行するスキル。デフォルトブランチにまだマージされていないワークフローファイルを動作確認する際に使用。workflow_dispatchトリガーを持つワークフローの実行をサポート。
@@ -305,72 +251,26 @@ gh run list --limit 5
 - ワークフローの inputs が必要な場合は、ユーザーに確認してから `-f` オプションで指定すること
 - 実行後は、実行IDやURLをユーザーに提示すること
 - 一時的な `pull_request` トリガーの削除方法は、必ずユーザーに確認してから実行すること（ステップ4参照）
-```
+````
 
-このskill.mdファイルには、実行フローの詳細、トラブルシューティング、実装上の注意点がすべて含まれています。Claude Codeはこのファイルを読み込んで、記述された手順に従って作業を進めてくれます。
+# 実際の使用イメージ
 
-# 実際の使用例
+以下のように動作します。
 
-実際にこのスキルを使ってみると、以下のような流れになります。
+![](/images/2026_01_16_claude_code_skills_github_actions_img1.png)
 
-## スキルの呼び出し方
+画像のように文脈を判断して自動的に読み込んでくれますが、`/test-workflow-on-branch`で明示的に呼び出すことも可能です。
 
-Claude Codeで以下のように入力します：
+# 工夫したポイント
 
-```
-/test-workflow-on-branch
-```
+ブログの手順は自然言語で書かれているため、作業に必要なステップが明示されていませんでした。そこで、一度pull_requestトリガーを追加してPull Requestを作成するステップなどを細かく分けて、Claudeが迷わず実行できるように工夫しました。
 
-または、自然言語で：
-
-```
-新しいワークフローをテストしたいんだけど
-```
-
-すると、Claudeが自動的にこのスキルを選択して実行してくれます。
-
-## 使ってみた感想
-
-このスキルを作成してから、ワークフローのテストが格段に楽になりました。以前は毎回手順を確認しながら手動で実行していたのが、今ではClaudeに任せるだけで完了します。
-
-特に便利だと感じたのは、一時的なトリガーの削除方法を2つ提示してくれる点です。状況に応じて安全な方法を選べるので、安心して作業できます。
-
-# このスキルで工夫したポイント
-
-## 2段階プロセスの設計
-
-新規ワークフローに対応するため、一時的なトリガー追加→削除の流れを明確化しました。各ステップを番号付きで整理することで、Claudeが迷わず実行できるようにしています。
-
-## 選択肢の提示
-
-一時的なトリガー削除方法を2つ提示（revert vs force push）し、それぞれのメリット・デメリットを説明しています。これにより、ユーザーが状況に応じて適切な方法を選択できます。
-
-## 安全性重視
-
-force pushのリスクを明記し、ユーザーに判断を委ねる設計にしました。「実装上の注意点」セクションで、必ずユーザー確認を求めることを明記しています。
-
-# まとめ
-
-Claude Code Agent Skillsを作成することで、GitHub Actionsのワークフローテストという面倒な作業を自動化できました。
-
-Agent Skillsの素晴らしい点は、一度作成すれば何度でも使い回せることです。また、Markdownファイルで管理できるため、バージョン管理や共有も簡単です。
-
-同じような課題を抱えている方の参考になれば幸いです。他にも、こんなSkillsを作ってみたいというアイデアがあれば、ぜひ試してみてください！
+また、動作確認の際にはpull_requestトリガーを追加してpushする関係で、commit履歴が汚れてしまう問題があります。これを解決するために、revert以外にreset+force pushで履歴をクリーンに保つ方法も提示するようにしています（勝手にやられると嫌な操作なので確認するようにもしています）
 
 # 最後に
 
-この記事は、筋トレ習慣を作るアプリ『毎日ジム』の開発中に得た知見が元になっています。よかったらぜひ使ってみてください。
+Claude Code Agent Skillsを作成することで、GitHub Actionsのワークフローをテストする際のハック手法を自動化することができました。同じような課題を抱えている方の参考になれば幸いです。
 
-https://apps.apple.com/jp/app/id6749178514
-
-また、Xのフォローもよろしくお願いします！
+よかったらXのフォローもよろしくお願いします！
 
 https://x.com/nkjzm
-
-# 参考
-
-- [Running a GitHub Actions workflow that doesn't exist yet on the default branch - Thomas Levesque](https://thomaslevesque.com/2024/04/25/running-a-github-actions-workflow-that-doesnt-exist-yet-on-the-default-branch/)
-- [Agent Skills - Claude Code Docs](https://code.claude.com/docs/en/skills)
-- [Agent Skills - Platform Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
-- [GitHub - anthropics/skills](https://github.com/anthropics/skills)
-- [GitHub CLI - gh workflow run](https://cli.github.com/manual/gh_workflow_run)
