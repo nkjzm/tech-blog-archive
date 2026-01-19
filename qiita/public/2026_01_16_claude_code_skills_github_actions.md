@@ -1,15 +1,14 @@
 ---
-title: Claude Code Skillsを作ってGitHub Actionsのワークフローテストを快適にした話
+title: マージ前のGitHub Actionsのワークフローをテスト実行するClaude Code Skillsの紹介
+private: false
 tags:
-  - CI
   - GitHubActions
   - ClaudeCode
-private: false
+  - CI
 updated_at: '2026-01-19T19:08:08+09:00'
 id: 2644e8fc8db0f5375951
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 # はじめに
