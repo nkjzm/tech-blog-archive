@@ -1,14 +1,15 @@
 ---
 title: マージ前のGitHub Actionsをテスト実行するClaude Code Skillsの紹介
-private: false
 tags:
+  - CI
   - GitHubActions
   - ClaudeCode
-  - CI
-updated_at: '2026-01-19T22:09:38+09:00'
+private: false
+updated_at: '2026-01-19T22:10:43+09:00'
 id: 2644e8fc8db0f5375951
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 # はじめに
