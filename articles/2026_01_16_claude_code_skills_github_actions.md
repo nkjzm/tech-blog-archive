@@ -1,5 +1,5 @@
 ---
-title: "マージ前のGitHub Actionsのワークフローをテスト実行するClaude Code Skillsの紹介"
+title: "マージ前のGitHub Actionsをテスト実行するClaude Code Skillsの紹介"
 emoji: "🤖"
 type: "tech"
 topics: ["GitHubActions","ClaudeCode","CI"]
