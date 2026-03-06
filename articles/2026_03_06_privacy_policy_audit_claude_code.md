@@ -59,6 +59,7 @@ privacy-policy/
 │   └── update-policy.md               # ポリシー更新コマンド
 ├── .github/workflows/sync-notion.yml  # 自動同期ワークフロー
 ├── app-store-privacy-reference.md     # App Store Connect 質問項目リファレンス
+├── privacy-policy-requirements.md     # プライバシーポリシー要件リファレンス
 ├── apps.md                            # アプリリスト（カスタムコマンドで参照）
 ├── audits/                            # アプリ別監査レポート出力先
 ├── privacy-policy-ja.md               # プライバシーポリシー（日本語）
@@ -106,15 +107,19 @@ Claude Codeで以下のように実行します。
 
 監査レポートの内容をもとに、プライバシーポリシー（日本語・英語）の更新が必要な箇所を分析するコマンドです。監査レポートの「収集するデータ」テーブルと現行ポリシーのアプリ別セクションを突き合わせ、追加・削除・修正の提案を一覧で提示します。自動適用ではなく、提案を確認した上で承認する設計にしているため、意図しない変更が入ることはありません。
 
-## app-store-privacy-reference.md の役割
+## リファレンスファイルの役割
 
-カスタムコマンドの中で「ステップ2: リファレンス読み込み」として参照されている`app-store-privacy-reference.md`は、AIが判断を行うための知識ベースです。以下の情報をまとめています。
+カスタムコマンドが正確な判断を行うために、2つのリファレンスファイルを用意しています。
+
+`app-store-privacy-reference.md`は`/privacy-audit`が参照する知識ベースで、以下の情報をまとめています。
 
 - **全16カテゴリ × データタイプ一覧** — App Store Connectで回答が必要な全項目と、iOSでの典型的な検出パターン
 - **SDKとプライバシーへの影響マッピング** — Firebase、AdMob、RevenueCat等の主要SDKが収集するデータの一覧
 - **Info.plist権限キーとデータカテゴリの対応表** — `NSCameraUsageDescription`→写真またはビデオ、のような対応関係
 
-このリファレンスがないとAIは一般知識に頼ることになり、SDKのバージョンアップによるデータ収集の変更や、App Storeの質問項目の更新に追従できません。正確な判断基準を手元に持たせることが精度向上のポイントです。
+`privacy-policy-requirements.md`は`/update-policy`が参照する要件定義で、プライバシーポリシーが満たすべき条件をプラットフォームごとにまとめています。Apple App StoreのReview Guidelines、Google Playのデータ安全セクション、GDPRの必須要素に加え、日英整合性やポリシーの構造ルールも定義しています。
+
+これらのリファレンスがないとAIは一般知識に頼ることになり、SDKのバージョンアップによるデータ収集の変更や、各プラットフォームの要件更新に追従できません。正確な判断基準を手元に持たせることが精度向上のポイントです。
 
 
 ## 手動確認が必要な項目
