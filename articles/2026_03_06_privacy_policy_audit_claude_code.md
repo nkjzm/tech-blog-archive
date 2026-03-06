@@ -37,7 +37,7 @@ https://apps.apple.com/jp/app/%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%83%91%E3%8
 
 ![IMG](/images/2026_03_06_privacy.png)
 
-また、生成したプライバシーポリシーの例がこちらです。各プラットフォームや法律(App StoreやGoogle Play、GDPRなど)の要件を満たすような内容にすることで、1つのポリシーで複数の要件をカバーできるようにしています。
+また、生成したプライバシーポリシーの例がこちらです。1つのポリシーで複数のプラットフォームに提出できるよう、App StoreやGoogle Play、GDPRなどのそれぞれの要件を満たすような内容にしています。
 https://nkjzm.jp/privacy-policy
 
 # 仕組みの全体像
@@ -48,7 +48,6 @@ https://nkjzm.jp/privacy-policy
 - **/privacy-label-diff** — 監査レポートとApp Store上の実際のプライバシーラベルを突き合わせて差分を検出
 - **/update-policy** — 監査レポートの結果をもとにプライバシーポリシー（ja/en）の更新差分を分析・提示し、承認後に適用
 - **プライバシーポリシーの自動公開** — Markdownで日英2言語を管理し、mainブランチへのpush時に公開ページへ自動同期
-
 
 プロジェクトは下記のような構成になっています
 
@@ -68,8 +67,6 @@ privacy-policy/
     ├── fetch-privacy-label.sh         # プライバシーラベル取得スクリプト
     └── sync-to-notion.sh              # Notion同期スクリプト
 ```
-
-この記事ではメインとなるプライバシー監査の仕組みを中心に紹介し、関連するスラッシュコマンドとNotion同期についても触れます。
 
 # /privacy-audit - App Store プライバシー監査の自動化
 
@@ -103,7 +100,7 @@ Claude Codeで以下のように実行します。
 
 # /privacy-label-diff - App Storeプライバシーラベルとの突き合わせ
 
-`/privacy-audit`で生成した監査レポートと、App Store上で実際に申告されているプライバシーラベルを突き合わせるコマンドです。`scripts/fetch-privacy-label.sh`でApp Store APIからラベル情報を取得し、監査レポートとの差分を「申告不足」「過剰申告」「属性不一致」の3種類で検出します。結果は監査レポートの末尾に追記されるため、監査→突き合わせの流れで一貫した記録が残ります。
+`/privacy-audit`で生成した監査レポートと、App Store上で実際に申告されているプライバシーラベルを突き合わせるコマンドです。`scripts/fetch-privacy-label.sh`でApp Storeページからプライバシーラベル情報を取得し、監査レポートとの差分を「申告不足」「過剰申告」「属性不一致」の3種類で検出します。結果は監査レポートの末尾に追記されるため、監査→突き合わせの流れで一貫した記録が残ります。
 
 # /update-policy - プライバシーポリシーの更新
 
