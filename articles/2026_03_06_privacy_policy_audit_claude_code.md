@@ -30,7 +30,7 @@ https://apps.apple.com/jp/app/%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%83%91%E3%8
 | SDK | プライバシーへの影響 |
 |---|---|
 | firebase-ios-sdk | Analytics（使用状況データ）、Crashlytics（診断データ）を収集 |
-| swift-package-manager-google-mobile-ads | AdMob広告：識別子（デバイスID/IDFA）、広告データ収集 |
+| swift-package-manager-google-mobile-ads | AdMob広告：ID（デバイスID/IDFA）、広告データ収集 |
 | swift-package-manager-google-user-messaging-platform | ATT/GDPR同意フォーム表示 |
 
 これらのSDK情報とソースコード分析の結果を統合し、App Store Connectへの推奨回答テーブルが生成されます。これを見ながらブラウザ上でApp Store Connectの質問項目に回答していくことができます。
@@ -45,28 +45,31 @@ https://nkjzm.jp/privacy-policy
 `privacy-policy`というリポジトリを作成し、プライバシーポリシーに関する機能をまとめています。
 
 - **/privacy-audit** — iOSアプリのリポジトリを静的解析し、App Store Connectの「アプリのプライバシー」セクションへの推奨回答を生成
-// TODO: 他のスラッシュコマンドもリストに追加する
+- **/privacy-label-diff** — 監査レポートとApp Store上の実際のプライバシーラベルを突き合わせて差分を検出
+- **/update-policy** — 監査レポートの結果をもとにプライバシーポリシー（ja/en）の更新差分を分析・提示し、承認後に適用
 - **プライバシーポリシーの自動公開** — Markdownで日英2言語を管理し、mainブランチへのpush時に公開ページへ自動同期
 
 
 プロジェクトは下記のような構成になっています
 
-// TODO: apps.mdも追加
-
 ```
 privacy-policy/
 ├── .claude/commands/
-│   └── privacy-audit.md               # プライバシー監査カスタムコマンド
+│   ├── privacy-audit.md               # プライバシー監査カスタムコマンド
+│   ├── privacy-label-diff.md          # プライバシーラベル突き合わせコマンド
+│   └── update-policy.md               # ポリシー更新コマンド
 ├── .github/workflows/sync-notion.yml  # 自動同期ワークフロー
 ├── app-store-privacy-reference.md     # App Store Connect 質問項目リファレンス
+├── apps.md                            # アプリリスト（カスタムコマンドで参照）
 ├── audits/                            # アプリ別監査レポート出力先
 ├── privacy-policy-ja.md               # プライバシーポリシー（日本語）
 ├── privacy-policy-en.md               # Privacy Policy (English)
 └── scripts/
+    ├── fetch-privacy-label.sh         # プライバシーラベル取得スクリプト
     └── sync-to-notion.sh              # Notion同期スクリプト
 ```
 
-この記事ではメインとなるプライバシー監査の仕組みを中心に紹介し、Notion同期については最後に概要だけ触れます。
+この記事ではメインとなるプライバシー監査の仕組みを中心に紹介し、関連するスラッシュコマンドとNotion同期についても触れます。
 
 # /privacy-audit - App Store プライバシー監査の自動化
 
@@ -98,7 +101,13 @@ Claude Codeで以下のように実行します。
 
 証拠が見つかれば「収集あり」、なければ「収集なし」、静的解析で判定できない場合は「手動確認必要」としてフラグを立てます。
 
-# TODO: 他のスラッシュコマンドも紹介する
+# /privacy-label-diff - App Storeプライバシーラベルとの突き合わせ
+
+`/privacy-audit`で生成した監査レポートと、App Store上で実際に申告されているプライバシーラベルを突き合わせるコマンドです。`scripts/fetch-privacy-label.sh`でApp Store APIからラベル情報を取得し、監査レポートとの差分を「申告不足」「過剰申告」「属性不一致」の3種類で検出します。結果は監査レポートの末尾に追記されるため、監査→突き合わせの流れで一貫した記録が残ります。
+
+# /update-policy - プライバシーポリシーの更新
+
+監査レポートの内容をもとに、プライバシーポリシー（日本語・英語）の更新が必要な箇所を分析するコマンドです。監査レポートの「収集するデータ」テーブルと現行ポリシーのアプリ別セクションを突き合わせ、追加・削除・修正の提案を一覧で提示します。自動適用ではなく、提案を確認した上で承認する設計にしているため、意図しない変更が入ることはありません。
 
 ## app-store-privacy-reference.md の役割
 
@@ -115,8 +124,8 @@ Claude Codeで以下のように実行します。
 
 静的解析では判定できない項目もレポートに記載されます。たとえばLuckeyPanelの場合、以下の指摘がありました。
 
-- `ATTrackingManager.requestTrackingAuthorization`を呼び出しているが、Info.plistに`NSUserTrackingUsageDescription`が見当たらない → Xcode設定またはxcstringsで定義されているか要確認
-- `PrivacyInfo.xcprivacy`の`NSPrivacyCollectedDataTypes`が空配列 → Firebase/AdMobを使用しているため、App Store審査前にデータタイプの追加が必要
+- `google-ads-on-device-conversion-ios-sdk`が依存に含まれており、オンデバイス処理のため外部送信はないとされるが、コンバージョン計測目的の使用箇所を確認すること
+- `identifierForVendor`（IDFV）がデバッグ機能のアクセス制御に使用されているが、外部サーバーに送信されていないことの確認が必要
 
 このように、完全自動化ではなく「AIの出力を人間が確認するフロー」になっています。
 
