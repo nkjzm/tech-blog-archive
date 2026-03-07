@@ -1,14 +1,15 @@
 ---
 title: Claude Codeでコード上からApp Store向けのプライバシーポリシーを自動生成する
-private: false
 tags:
-  - ClaudeCode
   - iOS
   - AI
-updated_at: '2026-03-07T04:05:45.328Z'
-id: null
+  - ClaudeCode
+private: false
+updated_at: '2026-03-07T13:05:57+09:00'
+id: 3a92304f199797f44390
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 :::note
