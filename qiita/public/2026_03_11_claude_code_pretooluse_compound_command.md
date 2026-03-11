@@ -1,14 +1,15 @@
 ---
 title: Claude Codeで複合コマンドの確認プロンプトが表示される問題を防ぐ
-private: false
 tags:
-  - ClaudeCode
   - Git
   - 開発環境
-updated_at: '2026-03-11T16:41:14+09:00'
+  - ClaudeCode
+private: false
+updated_at: '2026-03-11T16:42:30+09:00'
 id: f7032326b6644492665e
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 :::note
