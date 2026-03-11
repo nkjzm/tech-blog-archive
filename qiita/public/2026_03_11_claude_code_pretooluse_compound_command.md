@@ -1,14 +1,15 @@
 ---
 title: Claude Codeで複合コマンドによるAllowリスト回避を防ぐ
-private: false
 tags:
-  - ClaudeCode
   - Git
   - 開発環境
-updated_at: '2026-03-11T07:39:28.185Z'
-id: null
+  - ClaudeCode
+private: false
+updated_at: '2026-03-11T16:39:40+09:00'
+id: f7032326b6644492665e
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 :::note
