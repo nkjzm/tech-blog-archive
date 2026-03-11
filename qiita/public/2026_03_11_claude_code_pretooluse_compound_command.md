@@ -1,15 +1,14 @@
 ---
 title: Claude Codeで複合コマンドによるAllowリスト回避を防ぐ
+private: false
 tags:
+  - ClaudeCode
   - Git
   - 開発環境
-  - ClaudeCode
-private: false
 updated_at: '2026-03-11T16:39:40+09:00'
 id: f7032326b6644492665e
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 
 :::note
@@ -21,6 +20,8 @@ ignorePublish: false
 Claude Codeのsettings.jsonには`permissions.allow`でAllowリストを設定する機能がありますが、`&&`や`;`で結合された複合コマンドだとプレフィックスマッチが正しく機能しません。Allowリストに登録済みのコマンドでも毎回確認プロンプトが表示されるようになり、自動編集モードが中断されてしまいます。
 
 この記事では、PreToolUseフックを使ってこの問題を回避する方法を紹介します。
+
+👇最終的にこうい形で回避できます
 
 ![IMG](https://raw.githubusercontent.com/nkjzm/tech-blog-archive/main/images/2026_03_11_claude_code_pretooluse_compound_command.png)
 *複合コマンドを実行しようとすると警告が表示されて、分割して実行されている様子*
