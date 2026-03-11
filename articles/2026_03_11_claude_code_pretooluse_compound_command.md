@@ -1,5 +1,5 @@
 ---
-title: "Claude Codeで複合コマンドによるAllowリスト回避を防ぐ"
+title: "Claude Codeで複合コマンドの確認プロンプトが表示される問題を防ぐ"
 emoji: "🪝"
 type: "tech"
 topics: ["ClaudeCode","Git","開発環境"]
