@@ -16,6 +16,8 @@ Claude Codeのsettings.jsonには`permissions.allow`でAllowリストを設定�
 
 この記事では、PreToolUseフックを使ってこの問題を回避する方法を紹介します。
 
+👇最終的にこうい形で回避できます
+
 ![IMG](/images/2026_03_11_claude_code_pretooluse_compound_command.png)
 *複合コマンドを実行しようとすると警告が表示されて、分割して実行されている様子*
 
