@@ -1,6 +1,6 @@
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -11,6 +11,8 @@ function git(args, encoding = 'utf8') {
 if (git(['rev-parse', '--is-shallow-repository']).trim() === 'true') {
   throw new Error('履歴が不足しています。shallow cloneを解除してから再実行してください。');
 }
+const { sources } = JSON.parse(readFileSync(resolve(root, 'writing/sources.json'), 'utf8'));
+const targetPaths = new Set(sources.map(source => source.articlePath));
 const commits = git(['rev-list', '--all', '--topo-order', '--reverse']).trim().split('\n').filter(Boolean);
 const trees = new Map();
 const ancestors = new Map();
@@ -26,7 +28,7 @@ function readTree(commit) {
       const tab = row.indexOf('\t');
       const path = row.slice(tab + 1);
       const [mode, type, blob] = row.slice(0, tab).split(' ');
-      if (/^articles\/[^/]+\.md$/.test(path) && type === 'blob' && mode !== '120000') tree.set(path, blob);
+      if (targetPaths.has(path) && /^articles\/[^/]+\.md$/.test(path) && type === 'blob' && mode !== '120000') tree.set(path, blob);
     }
     trees.set(commit, tree);
   }
@@ -45,6 +47,11 @@ function version(blob) {
     });
   }
   return versions.get(blob);
+}
+for (const source of sources) {
+  if (!commits.includes(source.initialDraftCommit) || !readTree(source.initialDraftCommit).has(source.articlePath)) {
+    throw new Error(`登録された初稿が全ローカルrefsの履歴に存在しません: ${source.articlePath} @ ${source.initialDraftCommit}`);
+  }
 }
 for (const commit of commits) {
   const metadata = git(['show', '-s', '--format=%P%x00%aI%x00%cI%x00%an%x00%B', commit]).split('\0');
@@ -97,7 +104,7 @@ for (const article of articleRows) {
 }
 const index = {
   schemaVersion: 1,
-  scope: { refs: 'all local refs', paths: 'articles/*.md', committedOnly: true, articleChangingCommitsOnly: true, comparison: 'each parent', articleIdentity: 'path' },
+  scope: { refs: 'all local refs', paths: 'writing/sources.json registered AI drafts only', committedOnly: true, articleChangingCommitsOnly: true, comparison: 'each parent', articleIdentity: 'path' },
   counts: { articleChangingCommits: articleCommits.length, articles: articleRows.length, uniqueBlobs: versions.size },
   commits: articleCommits,
   articles: articleRows,

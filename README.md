@@ -98,4 +98,4 @@ Zenn記事をQiita記事に変換する際、`articles/`と`qiita/public/`で**�
 
 ## 初稿と修正履歴
 
-記事を生成する前に [writing/README.md](writing/README.md) と採用可能な比較ペアを参照します。コミット済み記事の全版は `node scripts/export-writing-history.mjs` で抽出できます。人間修正の確定とペア登録の手順も同READMEに記載しています。
+記事を生成する前に [writing/README.md](writing/README.md) と採用可能な比較ペアを参照します。AIが初稿を書いた記事を `writing/sources.json` に登録し、その記事のコミット済み全版だけを `node scripts/export-writing-history.mjs` で抽出できます。未登録の記事は対象外です。人間修正の確定とペア登録の手順も同READMEに記載しています。

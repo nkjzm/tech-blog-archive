@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "articlePath": "articles/2026_01_16_claude_code_skills_github_actions.md",
+      "initialDraftCommit": "7ab85d938cd5337c55a2ca8f4acc54719d3ff1f7",
+      "evidence": "初回保存コミットのCo-Authored-ByにClaude Sonnet 4.5を記載。初稿へのAI関与を示す。"
+    },
+    {
+      "articlePath": "articles/2026_03_06_privacy_policy_audit_claude_code.md",
+      "initialDraftCommit": "8f84db543aaf7e5638f251596007e8889104687f",
+      "evidence": "初回保存コミットのCo-Authored-ByにClaude Opus 4.6を記載。初稿へのAI関与を示す。"
+    },
+    {
+      "articlePath": "articles/2026_03_11_claude_code_pretooluse_compound_command.md",
+      "initialDraftCommit": "f630f67eaf6c7428514d9e05360d018da21be84f",
+      "evidence": "初回保存コミットのCo-Authored-ByにClaude Sonnet 4.6を記載。初稿へのAI関与を示す。"
+    },
+    {
+      "articlePath": "articles/2026_10_22_aqua_voice_trailing_period.md",
+      "initialDraftCommit": "edbbfed689f9ba5b6fef93bda3b58dade754d8d5",
+      "evidence": "2026-10-22の本会話でCodexが初稿を作成。初回保存本文にもCodexと一緒に執筆した旨を記載。"
+    }
+  ]
+}
