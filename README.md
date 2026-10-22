@@ -11,7 +11,8 @@
 - `books/`: Zenn の本
 - `images/`: 記事や本で使用する画像
 - `qiita/`: Qiita 記事（Zenn 記事から自動生成される）
-- `scripts/`: 変換スクリプト
+- `scripts/`: 変換・履歴抽出スクリプト
+- `writing/`: AI初稿・修正履歴と記事生成用の比較資料（[使い方](writing/README.md)）
 
 ## 開発方法
 
@@ -94,3 +95,7 @@ Zenn記事をQiita記事に変換する際、`articles/`と`qiita/public/`で**�
 
 - 記事の編集は`articles/`ディレクトリ内の Markdown ファイルを直接編集してください
 - `qiita/`ディレクトリ内のファイルは自動生成されるため、手動編集しないでください
+
+## 初稿と修正履歴
+
+記事を生成する前に [writing/README.md](writing/README.md) と採用可能な比較ペアを参照します。コミット済み記事の全版は `node scripts/export-writing-history.mjs` で抽出できます。人間修正の確定とペア登録の手順も同READMEに記載しています。

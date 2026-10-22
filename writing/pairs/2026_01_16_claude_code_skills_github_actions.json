@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "2026_01_16_claude_code_skills_github_actions",
+  "articlePath": "articles/2026_01_16_claude_code_skills_github_actions.md",
+  "usableForGeneration": true,
+  "confirmedByUser": false,
+  "classification": "commit-evidence-supported-human-revision",
+  "context": "AI関与のある保存版から、手動修正と明記された版への比較。本人が今回この区間を人間のみの修正と直接確認したものではない。",
+  "before": {
+    "commit": "7ab85d938cd5337c55a2ca8f4acc54719d3ff1f7",
+    "blob": "23be5774564da4be7aff4317f6bf99ed7ea5251b",
+    "snapshot": "../snapshots/2026_01_16_claude_code_skills_github_actions/23be5774564da4be7aff4317f6bf99ed7ea5251b.md"
+  },
+  "after": {
+    "commit": "bb110966f207749a8b804a58d64bdf4c4c27ca90",
+    "blob": "c77d5cd3c95f15a23add641453bb3b3fcff120e7",
+    "snapshot": "../snapshots/2026_01_16_claude_code_skills_github_actions/c77d5cd3c95f15a23add641453bb3b3fcff120e7.md"
+  },
+  "evidence": [
+    {
+      "commit": "7ab85d938cd5337c55a2ca8f4acc54719d3ff1f7",
+      "basis": "Co-Authored-ByにClaude Sonnet 4.5を記載。AI関与の根拠であり、全文AI執筆の証明ではない。"
+    },
+    {
+      "commit": "bb110966f207749a8b804a58d64bdf4c4c27ca90",
+      "basis": "コミットメッセージ「手動で記事の内容を修正」"
+    }
+  ],
+  "limitations": [
+    "コミットメッセージに基づく採用候補。本人の確定確認は未取得。",
+    "修正には内容面の変更も含まれるため、すべてを一般的な文体の好みとは解釈しない。"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "2026_03_06_privacy_policy_audit_claude_code",
+  "articlePath": "articles/2026_03_06_privacy_policy_audit_claude_code.md",
+  "usableForGeneration": true,
+  "confirmedByUser": false,
+  "classification": "commit-evidence-supported-human-revision",
+  "context": "初回保存版からユーザー更新版までにAI修正を挟む。直接の人間修正候補はbefore→afterで比較し、initialDraft→afterを純粋な人間修正とは扱わない。",
+  "initialDraft": {
+    "commit": "8f84db543aaf7e5638f251596007e8889104687f",
+    "blob": "c70fc971d59fa1e113b6274b209e713b08d3ea4f",
+    "snapshot": "../snapshots/2026_03_06_privacy_policy_audit_claude_code/c70fc971d59fa1e113b6274b209e713b08d3ea4f.md",
+    "label": "AI関与のある初回Git保存版（執筆初稿とは限らない）"
+  },
+  "before": {
+    "commit": "2b987ce21b7db914635e1d748d501ae9d09f7cc9",
+    "blob": "655d23ce07ac541f8a3ddcb62fd01a70e17b30ee",
+    "snapshot": "../snapshots/2026_03_06_privacy_policy_audit_claude_code/655d23ce07ac541f8a3ddcb62fd01a70e17b30ee.md"
+  },
+  "after": {
+    "commit": "a7de35f99b97328e725a80e54892c1a4ef78192a",
+    "blob": "1b157ec73c7bc626bbb97cbf886527fdbf708cae",
+    "snapshot": "../snapshots/2026_03_06_privacy_policy_audit_claude_code/1b157ec73c7bc626bbb97cbf886527fdbf708cae.md"
+  },
+  "evidence": [
+    {
+      "commit": "8f84db543aaf7e5638f251596007e8889104687f",
+      "basis": "Co-Authored-ByにClaude Opus 4.6を記載。AI関与の根拠。"
+    },
+    {
+      "commit": "2b987ce21b7db914635e1d748d501ae9d09f7cc9",
+      "basis": "ユーザー更新直前のAI関与版。初回保存版以降にもAI修正がある。"
+    },
+    {
+      "commit": "a7de35f99b97328e725a80e54892c1a4ef78192a",
+      "basis": "コミットメッセージ「ユーザー更新」"
+    }
+  ],
+  "limitations": [
+    "コミットメッセージに基づく採用候補。本人の確定確認は未取得。",
+    "初回保存版から確定候補版までの差分は、AI修正とユーザー更新の混合。",
+    "技術内容の訂正と文章の好みは区別して参考にする。"
+  ]
+}
