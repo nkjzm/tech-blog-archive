@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Claude Code と Codex 共通のプロジェクト指示です。作業時は `~/.codex/AGENTS.md` とリポジトリ直下の本ファイルを両方確認してください。Claude Code は `~/.claude/CLAUDE.md` から共通指示を読み込みます。
 
 ## プロジェクト概要
 
