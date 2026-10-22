@@ -1,0 +1,45 @@
+---
+title: "Jenkinsの「成果物を保存」で.appの保存に失敗した時の備忘録"
+emoji: "🔧"
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ["Jenkins", "Unity"]
+published: true
+---
+# 状況
+
+UnityでMac用アプリを書き出す時の話。
+
+「保存するファイル」に以下を指定
+
+```
+target/*.app
+```
+
+コンソール出力
+
+```
+成果物を保存中
+ERROR: Step ‘成果物を保存’ failed: 指定されたファイルパターン「target/YourProject.app」に合致するファイルがありません。設定ミス？
+Finished: FAILURE
+```
+
+# 原因
+
+`.app`の実態はディレクトリなので、ディレクトリとしてパスを指定する必要があった。
+
+# 解決策
+
+「保存するファイル」に以下を指定
+
+```
+target/*.app/
+```
+
+コンソール出力
+
+```
+成果物を保存中
+Finished: SUCCESS
+```
+
+
